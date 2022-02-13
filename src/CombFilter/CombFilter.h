@@ -15,18 +15,23 @@ public:
     Error_t initCombFilter(int iNumOfChannels, float                    kParamGain, float kParamDelay);
 
     Error_t setGain(float fParamValue);
-
+    Error_t setNumOfChannels (int fParamValue);
     Error_t setDelay(float fParamValue);
-
+    
+    
     float getGain();
-
+    int getNumOfChannels();
     float getDelay();
 
+protected:
+    CCombFilterBase();
+    ~CCombFilterBase ();
+    CRingBuffer<float>** pCRingBuff;
+    
 private:
-    CRingBuffer<float>** mRingBufferPtr;
-    float kParamGain;
-    int kParamDelay;
-    int iNumOfChannels;
+    float mGain;
+    int mDelay;
+    int mNumOfChannels;
     int mSampleRateinHz;
 };
 
