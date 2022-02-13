@@ -6,36 +6,41 @@
 //
 
 #include "CombFilterIf.h"
+#include "RingBuffer.h"
 
 class CCombFilterBase
 {
 public:
-    CCombFilterBase (int DelayLengthIns, int iNumChannels, float gain=0.2)
-    {
-        
-    }
     
-    
+    Error_t initCombFilter(int iNumOfChannels, float kParamGain, float kParamDelay);
+
     Error_t setGain(float fParamValue);
+
     Error_t setDelay(float fParamValue);
+
     float getGain();
+
     float getDelay();
 
-private:
-    
+protected:
+    CRingBuffer<float>** mRingBufferPtr;
     float kParamGain;
-    float kParamDelay;
+    int kParamDelay;
+    int iNumOfChannels;
 };
 
 
 class CCombFilterFIR : public CCombFilterBase
 {
 public:
+    Error_t process(float **ppfInputBuffer, float **ppfOutputBuffer, int iNumberOfFrames);
+    
 private:
 };
 
 class CCombFilterIIR : public CCombFilterBase
 {
 public:
+    Error_t process(float **ppfInputBuffer, float **ppfOutputBuffer, int iNumberOfFrames);
 private:
 };
