@@ -57,7 +57,7 @@ const char*  CCombFilterIf::getBuildDate ()
 
 Error_t CCombFilterIf::create (CCombFilterIf*& pCCombFilter)
 {
-    pCCombFilter = new CCombFilterBase () ;
+    pCCombFilter = new CCombFilterIf () ;
     return Error_t::kNoError;
 }
 
@@ -70,12 +70,34 @@ Error_t CCombFilterIf::destroy (CCombFilterIf*& pCCombFilter)
 
 Error_t CCombFilterIf::init (CombFilterType_t eFilterType, float fMaxDelayLengthInS, float fSampleRateInHz, int iNumChannels)
 {
-    
+    switch(eFilterType)
+    {
+        case(kCombFIR):
+            // Run FIR Filter
+            return Error_t::kNoError;
+            break;
+        
+        case (kCombIIR):
+            // Run IIR Filter
+            return Error_t::kNoError;
+            break;
+        
+        default:
+            // Run FIR Filter
+            return Error_t::kNoError;
+            break;
+    }
     return Error_t::kNoError;
 }
 
 Error_t CCombFilterIf::reset ()
 {
+    if (!m_bIsInitialized)
+    {
+        init(CCombFilterIf::CombFilterType_t::kCombFIR, 1.0f, 48000.0f, 2);
+        setParam(FilterParam_t::kParamGain, 1.0f);
+        setParam(FilterParam_t::kParamDelay, 0);
+    }
     return Error_t::kNoError;
 }
 
@@ -86,10 +108,39 @@ Error_t CCombFilterIf::process (float **ppfInputBuffer, float **ppfOutputBuffer,
 
 Error_t CCombFilterIf::setParam (FilterParam_t eParam, float fParamValue)
 {
+    switch (eParam)
+    {
+        case (FilterParam_t::kParamGain):
+            m_pCCombFilter -> setGain(fParamValue);
+            break;
+            
+        case (FilterParam_t::kParamDelay):
+            m_pCCombFilter -> setDelay(fParamValue);
+            break;
+        
+        default:
+            m_pCCombFilter -> setGain(1.0f);
+            m_pCCombFilter -> setDelay (0.0f);
+            break;
+    
+    }
     return Error_t::kNoError;
 }
 
 float CCombFilterIf::getParam (FilterParam_t eParam) const
 {
-    return 0;
+    switch (eParam)
+    {
+        case (FilterParam_t::kParamGain):
+            return m_pCCombFilter -> getGain();
+            break;
+            
+        case (FilterParam_t::kParamDelay):
+            return m_pCCombFilter -> getDelay();
+            break;
+            
+        default:
+            return 0;
+            break;
+    }
 }

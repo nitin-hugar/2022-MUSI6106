@@ -7,32 +7,34 @@
 
 #include "CombFilterIf.h"
 
-class CCombFilterBase : public CCombFilterIf
+class CCombFilterBase
 {
 public:
-    Error_t init(CombFilterType_t eFilterType, float fMaxDelayLengthInS, float fSampleRateInHz, int iNumChannels);
+    CCombFilterBase (int DelayLengthIns, int iNumChannels, float gain=0.2)
+    {
+        
+    }
     
-    Error_t reset ();
     
-    Error_t process(float **ppfInputBuffer, float **ppfOutputBuffer, int iNumberOfFrames);
-    
-    Error_t setParam (FilterParam_t eParam, float fParamValue);
+    Error_t setGain(float fParamValue);
+    Error_t setDelay(float fParamValue);
+    float getGain();
+    float getDelay();
 
-    float getParam (FilterParam_t eParam);
-
-protected:
+private:
     
-    int kParamGain = 0;
-    float kParamDelay = 0.0f;
+    float kParamGain;
+    float kParamDelay;
 };
 
-class CCombFilterFIR: public CCombFilterBase
+
+class CCombFilterFIR : public CCombFilterBase
 {
 public:
 private:
 };
 
-class CCombFilterIIR: public CCombFilterBase
+class CCombFilterIIR : public CCombFilterBase
 {
 public:
 private:

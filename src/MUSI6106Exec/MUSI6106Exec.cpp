@@ -17,6 +17,7 @@ void    showClInfo ();
 // main function
 int main(int argc, char* argv[])
 {
+    
     std::string sInputFilePath,                 //!< file paths
                 sOutputFilePath;
 
@@ -45,6 +46,7 @@ int main(int argc, char* argv[])
         sOutputFilePath = sInputFilePath + ".txt";
     }
 
+    
     //////////////////////////////////////////////////////////////////////////////
     // open the input wave file
     CAudioFileIf::create(phAudioFile);

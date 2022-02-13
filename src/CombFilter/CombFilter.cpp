@@ -6,61 +6,26 @@
 //
 
 #include "CombFilter.h"
+#include <iostream>
 
 
-Error_t CCombFilterBase::init(CombFilterType_t eFilterType, float fMaxDelayLengthInS, float fSampleRateInHz, int iNumChannels)
+Error_t CCombFilterBase::setGain(float fParamValue)
 {
-    switch (eFilterType)
-    {
-        case kCombFIR:
-            //
-            break;
-        case kCombIIR:
-            
-            break;
-        default:
-            // select FIR by default
-            break;
-    }
+    kParamGain = fParamValue;
 }
 
-Error_t CCombFilterBase::reset()
+Error_t CCombFilterBase::setDelay(float fParamValue)
 {
-    CCombFilterBase::init(CombFilterType_t::kCombFIR, 2, 48000.0f, 2); //Set the initials to pre-decided values
+    kParamDelay = fParamValue;
 }
 
-Error_t CCombFilterBase::process(float **ppfInputBuffer, float **ppfOutputBuffer, int iNumberOfFrames)
+float CCombFilterBase::getGain()
 {
-    //
+    return kParamGain;
 }
 
-Error_t CCombFilterBase::setParam(FilterParam_t eParam, float fParamValue)
+float CCombFilterBase::getDelay()
 {
-    switch (eParam)
-    {
-        case FilterParam_t::kParamGain:
-            CCombFilterBase::kParamGain = fParamValue;
-            return Error_t::kNoError;
-            break;
-        
-        case FilterParam_t::kParamDelay:
-            CCombFilterBase::kParamDelay = fParamValue;
-            return Error_t::kNoError;
-            break;
-    }
+    return kParamDelay;
 }
 
-
-float CCombFilterBase::getParam(FilterParam_t eParam)
-    {
-    switch (eParam)
-    {
-        case FilterParam_t::kParamGain:
-            return CCombFilterBase::kParamGain;
-            break;
-        
-        case FilterParam_t::kParamDelay:
-            return CCombFilterBase::kParamDelay;
-            break;
-    }
-}
