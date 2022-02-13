@@ -30,15 +30,36 @@ float CCombFilterBase::getDelay()
 }
 
 Error_t CCombFilterFIR::process(float **ppfInputBuffer, float **ppfOutputBuffer, int iNumberOfFrames)
+
+for (int m; m < iNumOfChannels; m++)
 {
-    for  (int m=0; m < iNumChannels; m++)
+    for (int n; n < iNumOfFrames; n++ )
+    {
+        mRingBufferPtr[m] -> putPostInc()
+    }
+}
+
+
+{
+    for  (int m=0; m < mNumOfChannels; m++)
        {
            for (int n=0; n< iNumberOfFrames; n++)
            {
-               ppfOutputBuffer[m][n]= ppfInputBuffer[m][n] + CCombFilterBase::kParamGain * mRingBuffPtr[m] -> getPostInc();
-               mRingBuffptr[m] -> putPostInc (ppfInputBuffer [m][n] );
+               ppfOutputBuffer[m][n] = ppfInputBuffer[m][n] + CCombFilterBase::kParamGain * mRingBufferPtr[m] -> getPostInc();
+               mRingBufferPtr[m] -> putPostInc (ppfInputBuffer [m][n] );
                
            }
        }
+}
+
+Error_t CCombFilterIIR::process(float **ppfInputBuffer, float **ppfOutputBuffer, int iNumberOfFrames)
+{
+    for (int m=0; m< iNumOfChannels; m++)
+    {
+        for (int n=0; n < iNumberOfFrames; n++ )
+        {
+            
+        }
+    }
 }
 

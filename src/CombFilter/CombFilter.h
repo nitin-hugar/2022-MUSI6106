@@ -12,7 +12,7 @@ class CCombFilterBase
 {
 public:
     
-    Error_t initCombFilter(int iNumOfChannels, float kParamGain, float kParamDelay);
+    Error_t initCombFilter(int iNumOfChannels, float                    kParamGain, float kParamDelay);
 
     Error_t setGain(float fParamValue);
 
@@ -22,11 +22,12 @@ public:
 
     float getDelay();
 
-protected:
+private:
     CRingBuffer<float>** mRingBufferPtr;
     float kParamGain;
     int kParamDelay;
     int iNumOfChannels;
+    int mSampleRateinHz;
 };
 
 
