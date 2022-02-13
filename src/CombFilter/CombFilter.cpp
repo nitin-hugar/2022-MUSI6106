@@ -10,7 +10,7 @@
 
 CCombFilterBase :: CCombFilterBase()
 {
-    this -> initCombFilter(2, 1.0, 0.0);
+    this -> initCombFilter(2, 1.0, 0.0); // Change this to point to something
 }
 
 
