@@ -7,6 +7,7 @@
 
 #include "CombFilterIf.h"
 #include "RingBuffer.h"
+#include <cassert>
 
 class CCombFilterBase : public CCombFilterIf
 {

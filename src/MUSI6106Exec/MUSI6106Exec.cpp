@@ -6,46 +6,80 @@
 
 #include "AudioFileIf.h"
 #include "CombFilterIf.h"
+#include <cassert>
+#include <stdlib.h>
 
 
 using std::cout;
 using std::endl;
 
-// local function declarations
+//============================================================================
+// Define Tests
+//============================================================================
 void    showClInfo ();
+int test1();
+int test2();
+int test3();
+int test4();
+int test5();
+int runAllTests();
 
-/////////////////////////////////////////////////////////////////////////////////
+
 // main function
 int main(int argc, char* argv[])
 {
-    
-//    std::string sInputFilePath,                 //!< file paths
-//                sOutputFilePath;
+
+    //============================================================================
+    // Initialize pointers and inputs
+    //============================================================================
 
     static const int kBlockSize = 1024;
 
-    // clock_t time = 0;
+    float                   **ppfInputAudioData = nullptr,
+                            **ppfOutputAudioData = nullptr;;
 
-    float **ppfInputAudioData = nullptr;
-    float **ppfOutputAudioData = nullptr;
-    CAudioFileIf *phInputAudioFile = nullptr;
-    CAudioFileIf *phOutputAudioFile = nullptr;
+    CAudioFileIf            *phInputAudioFile = nullptr,
+                            *phOutputAudioFile = nullptr;
+
+    std::string             sInputFilePath,
+                            sOutputFilePath,
+                            sFilterType;
+
+    float                   delayTimeInSeconds,
+                            gain;
 
     CAudioFileIf::FileSpec_t stFileSpec;
     showClInfo();
 
-    //============================================================================
-    // Initialize test values
-    //============================================================================
-
-    std::string sInputFilePath = "/Users/apple/Desktop/4.wav";
-    std::string sOutputFilePath = "/Users/apple/Desktop/filteredOutput.wav";
-    float delayTimeInSeconds = 0.5;
-    float gain = 1.0;
-
     // Initialize CombFilter
-    CCombFilterIf *pCombFilter = nullptr;
-    CCombFilterIf::CombFilterType_t eFilterType = CCombFilterIf::kCombFIR;
+    CCombFilterIf           *pCombFilter = nullptr;
+    CCombFilterIf::CombFilterType_t eFilterType;
+
+
+    //============================================================================
+    // Parse CL Arguments
+    //============================================================================
+
+
+    if(argc < 2)
+    {
+        cout << "Usage: " << argv[1] << "<input audio Path>" << endl;
+        cout << argv[2] << "<output audio path>" << endl;
+        cout << argv[3] << "filter type: <FIR> or <IIR>" << endl;
+        cout << argv[4] << "<delay in seconds> (should be 0 or positive)" << endl;
+        cout << argv[5] << "<gain> (-1.0 .... 1.0)"<< endl;
+    }
+    else
+    {
+        sInputFilePath = argv[1];
+        sOutputFilePath = argv[2];
+        sFilterType = argv[3];
+        delayTimeInSeconds = atof(argv[4]);
+    }
+
+
+
+
 
     //============================================================================
     // open the input wave file
@@ -61,6 +95,7 @@ int main(int argc, char* argv[])
         return -1;
     }
     phInputAudioFile->getFileSpec(stFileSpec);
+
 
     //============================================================================
     // Open the output audio file
@@ -133,6 +168,7 @@ int main(int argc, char* argv[])
     // Clean up and free memory
     //============================================================================
 
+    CCombFilterIf::destroy(pCombFilter);
     phInputAudioFile -> closeFile();
     phOutputAudioFile -> closeFile();
     CAudioFileIf::destroy(phInputAudioFile);
@@ -151,7 +187,6 @@ int main(int argc, char* argv[])
     return 0;
 
 }
-
 
 void     showClInfo()
 {

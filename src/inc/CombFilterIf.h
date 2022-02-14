@@ -2,7 +2,7 @@
 #define __CombFilterIf_hdr__
 
 #include "ErrorDef.h"
-
+#include <cassert>
 
 class CCombFilterBase;
 

@@ -8,6 +8,7 @@
 #include "CombFilter.h"
 #include <iostream>
 
+
 //CCombFilterBase::CCombFilterBase()
 //{
 //}
@@ -19,12 +20,14 @@
 
 Error_t CCombFilterBase::setGain(float fParamValue)
 {
+    assert(fParamValue <= 1.0f || fParamValue >= -1.0f );
     mGain = fParamValue;
     return Error_t::kNoError;
 }
 
 Error_t CCombFilterBase::setDelay(float fParamValue)
 {
+    assert(fParamValue >= 0.0f );
     mDelayInSamples = fParamValue;
     return Error_t::kNoError;
 }
@@ -51,7 +54,6 @@ Error_t CCombFilterBase::initCombFilter(float fMaxDelayLengthInS, float fSampleR
     pCRingBuff = new CRingBuffer<float>* [iNumChannels];
     setNumOfChannels(iNumChannels);
     setSampleRate(fSampleRateInHz);
-//    CCombFilterIf::setParam(CCombFilterIf::kParamDelay, mDelayInSamples );
 
     for (int m =0; m < getNumOfChannels(); m++)
     {
@@ -67,6 +69,7 @@ int CCombFilterBase::getNumOfChannels() {
 
 Error_t CCombFilterBase::setSampleRate(float fSampleRate)
 {
+    assert(fSampleRate >= 0.0f);
     mSampleRateinHz = fSampleRate;
     return Error_t::kNoError;
 }
