@@ -8,6 +8,7 @@
 #include "CombFilterIf.h"
 #include <cassert>
 #include <stdlib.h>
+#include <stdio.h>
 
 
 using std::cout;
@@ -61,13 +62,15 @@ int main(int argc, char* argv[])
     //============================================================================
 
 
-    if(argc < 2)
+    if(argc != 6)
     {
-        cout << "Usage: " << argv[1] << "<input audio Path>" << endl;
-        cout << argv[2] << "<output audio path>" << endl;
-        cout << argv[3] << "filter type: <FIR> or <IIR>" << endl;
-        cout << argv[4] << "<delay in seconds> (should be 0 or positive)" << endl;
-        cout << argv[5] << "<gain> (-1.0 .... 1.0)"<< endl;
+        std::cout << "Arguments: " << std::endl;
+        std::cout << "<input audio Path>" << std::endl;
+        std::cout << "<output audio path>" << std::endl;
+        std::cout << "filter type: <FIR> or <IIR>" << std::endl;
+        std::cout << "<delay in seconds> (>= 0)" << std::endl;
+        std::cout << "<gain> (-1.0 .... 1.0)"<< std::endl;
+        return -1;
     }
     else
     {
@@ -75,11 +78,8 @@ int main(int argc, char* argv[])
         sOutputFilePath = argv[2];
         sFilterType = argv[3];
         delayTimeInSeconds = atof(argv[4]);
+        gain = atof(argv[5]);
     }
-
-
-
-
 
     //============================================================================
     // open the input wave file
