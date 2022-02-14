@@ -315,7 +315,7 @@
 
 ;;; -------- Common Music --------
 
-(define* (init-with-sound
+(define* (initCombFilter-with-sound
 	  (srate *clm-srate*) 
 	  (output *clm-file-name*) 
 	  (channels *clm-channels*)
@@ -332,7 +332,7 @@
 	  (scaled-to #f)
 	  (play *clm-play*)
 	  (scaled-by #f))
-  "(init-with-sound . args) is the first half of with-sound; it sets up the CLM output choices, reverb, etc. Use \
+  "(initCombFilter-with-sound . args) is the first half of with-sound; it sets up the CLM output choices, reverb, etc. Use \
 finish-with-sound to complete the process."
   (let ((old-srate (mus-srate))
 	(start (if statistics (get-internal-real-time)))
@@ -384,7 +384,7 @@ finish-with-sound to complete the process."
 	  start)))
 
 (define (finish-with-sound wsd)
-  "(finish-with-sound wsd) closes the notelist process started by init-with-sound"
+  "(finish-with-sound wsd) closes the notelist process started by initCombFilter-with-sound"
   (if (eq? (car wsd) 'with-sound-data)
       (let ((output (list-ref wsd 1))
 	    (reverb (list-ref wsd 2))
@@ -419,7 +419,7 @@ finish-with-sound to complete the process."
 (define wsdat-play ; for cm
   (make-procedure-with-setter
    (lambda (w)
-     "accessor for play field of init-with-sound struct"
+     "accessor for play field of initCombFilter-with-sound struct"
      (list-ref w 9))
    (lambda (w val)
      (list-set! w 9 val))))

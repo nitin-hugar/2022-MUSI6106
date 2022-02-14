@@ -14,7 +14,7 @@
 (definstrument 
   (stochastic start dur
 	      (amp .9) (bits 16) (xmin 1) (xmax 20) (xwig 0) (xstep 1) (ywig 0) (xfb 0)
-	      (init-array '((10 0) (10 1) (10 0) (10 -.7) (10 0) (10 .5) 
+	      (initCombFilter-array '((10 0) (10 1) (10 0) (10 -.7) (10 0) (10 .5)
 			    (10 0) (10 -.3) (10 0) (10 .2) (10 0) (10 -.1))))
   ;;some explanation of the parameters:
   ;;amp - scales overall amplitude
@@ -27,7 +27,7 @@
   ;;       percent of overall possible amplitude
   ;;xfb - an attempt at an FIR low-pass filter - the old (n + (x * n-1)) trick,
   ;;      not really that useful
-  ;;init-array - initial x and y breakpoints for wave. x values must be 
+  ;;initCombFilter-array - initial x and y breakpoints for wave. x values must be
   ;;             integers and 1 or greater, y values between -1.0 and 1.0
   (let* ((y 0.0) (dx 0) (prev-dx 0) (dy 0.0)
 	 (j 0.0) (m 0) (dt 0) (output 0.0) 
@@ -37,18 +37,18 @@
 	 (d-click (make-env (list 0 1 (- end 100) 1 end 0) :duration dur))
 	 (b (expt 2 (- bits 1))); because we use signed ints - see (- b) below
 	 ;;make vct to hold x,y breakpoints
-	 (xy-array (make-vct (* (length init-array) 2)))
+	 (xy-array (make-vct (* (length initCombFilter-array) 2)))
 	 (xy-array-l (floor (length xy-array)))
 	 )
-    ;;fill xy-array with values from init-array
-    (do ((iy 0 (+ iy 2));;index for reading values from init-array (a 2-dimensional list)
+    ;;fill xy-array with values from initCombFilter-array
+    (do ((iy 0 (+ iy 2));;index for reading values from initCombFilter-array (a 2-dimensional list)
 	 (jy 0 (+ jy 1)));;index for writing to xy-array (a 1-dimensional vct)
 	((= iy xy-array-l) xy-array)
-      (set! (xy-array iy) ((init-array jy) 0))
+      (set! (xy-array iy) ((initCombFilter-array jy) 0))
       (set! (xy-array (+ iy 1))
 	    ;;convert signed float y values into signed integers 
 	    (floor (* b
-		      ((init-array jy) 1)))))
+		      ((initCombFilter-array jy) 1)))))
 
      (do ((i beg (+ i 1)))
 	 ((= i end))

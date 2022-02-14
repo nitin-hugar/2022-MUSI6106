@@ -71,7 +71,7 @@ public:
     */
     Error_t init (CombFilterType_t eFilterType, float fMaxDelayLengthInS, float fSampleRateInHz, int iNumChannels);
     
-    /*! resets the internal variables (requires new call of init)
+    /*! resets the internal variables (requires new call of initCombFilter)
     \return Error_t
     */
     Error_t reset ();
@@ -102,7 +102,7 @@ protected:
     virtual ~CCombFilterIf ();
 
 private:
-    bool            m_bIsInitialized;   //!< internal bool to check whether the init function has been called
+    bool            m_bIsInitialized;   //!< internal bool to check whether the initCombFilter function has been called
     CCombFilterBase *m_pCCombFilter;    //!< handle of the comb filter
 
     float           m_fSampleRate;      //!< audio sample rate in Hz

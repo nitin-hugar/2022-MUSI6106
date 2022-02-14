@@ -139,7 +139,7 @@
 <p>s7 is a Scheme implementation intended as an extension language
 for other applications, primarily Snd and Common Music.  It exists as just two files, s7.c and
 s7.h, that want only to disappear into someone else's source tree.  There are no libraries,
-no run-time init files, and no configuration scripts.
+no run-time initCombFilter files, and no configuration scripts.
 It can be built as a stand-alone
 interpreter (see <a href="#repl">below</a>).  s7test.scm is a regression test for s7.
 A tarball is available: ftp://ccrma-ftp.stanford.edu/pub/Lisp/s7.tar.gz.  
@@ -150,8 +150,8 @@ s7 is the default extension language of Snd and sndlib (http://ccrma.stanford.ed
 and Rick Taube's Common Music (commonmusic at sourceforge).  There are X, Motif, Gtk, and openGL bindings
 in libxm in the Snd tarball, or at ftp://ccrma-ftp.stanford.edu/pub/Lisp/libxm.tar.gz.
 If you're running s7 in a context
-that has getenv, file-exists?, and system, you can use s7-slib-init.scm
-to gain easy access to slib.  This init file is named "s7.init" in the slib distribution.
+that has getenv, file-exists?, and system, you can use s7-slib-initCombFilter.scm
+to gain easy access to slib.  This initCombFilter file is named "s7.initCombFilter" in the slib distribution.
 </p>
 
 <p>Although it is a descendant of tinyScheme, s7 is closest as a Scheme dialect to Guile 1.8.
@@ -2730,10 +2730,10 @@ its top-level bindings are imported into the current environment:
 </p>
 
 <pre>
-(define-macro (let! init end . body)
+(define-macro (let! initCombFilter end . body)
   ;; syntax mimics 'do: (let! (vars&amp;values) ((exported-names) result) body)
   ;;   (let! ((a 1)) ((hiho)) (define (hiho x) (+ a x)))
-  `(let ,init
+  `(let ,initCombFilter
      ,@body
      (augment-environment! (outer-environment (current-environment))
        ,@(map (lambda (export)
@@ -2743,13 +2743,13 @@ its top-level bindings are imported into the current environment:
 </pre>
 
 <!--
-(define-macro (safe-let! init end . body)
+(define-macro (safe-let! initCombFilter end . body)
   `(with-environment 
        (#_environment 
 	(initial-environment)
 	,@(#_map (#_lambda (b) 
 		 `(#_cons ',(#_car b) ,(#_cadr b)))
-	       init))
+	       initCombFilter))
      ,@body
      (#_augment-environment! (#_outer-environment (#_current-environment))
 	,@(#_map (#_lambda (export)
@@ -3162,8 +3162,8 @@ Here's an idle thought:
       (cons 'object-&gt;string (lambda (p) "#&lt;float-vector&gt;")))
 
     (set! make-float-vector
-	  (lambda* (len (init 0.0)) 
-	    (let ((obj (make-vector len (-&gt;float init))))
+	  (lambda* (len (initCombFilter 0.0))
+	    (let ((obj (make-vector len (-&gt;float initCombFilter))))
 	      (<em class=red>open-environment</em>
 	        (make-procedure-with-setter
 		  (lambda (i) (#_vector-ref obj i))
@@ -3900,14 +3900,14 @@ make-hook is:
 
 <pre class="indented">
 (define (make-hook . args)
-  (let ((init ())
+  (let ((initCombFilter ())
 	(body ())
 	(end ()))
     (apply lambda* args
       '(let ((result #&lt;unspecified&gt;))
          (let ((e (current-environment)))
            (dynamic-wind 
-	     (lambda () (for-each (lambda (f) (f e)) init))
+	     (lambda () (for-each (lambda (f) (f e)) initCombFilter))
 	     (lambda () (for-each (lambda (f) (f e)) body) result)
 	     (lambda () (for-each (lambda (f) (f e)) end)))))
        ())))
@@ -3919,7 +3919,7 @@ and its return value is ignored.
 The function can use <code>(with-environment arg ...)</code> or <code>(arg symbol)</code> to access the arguments to the hook ('args').
 The hook environment's result field is the returned value of the hook application.
 Each such environment has three lists,
-init, body, and end, and
+initCombFilter, body, and end, and
 these lists of functions are called in dynamic-wind.
 Here's a sketch:
 </p>
@@ -3974,7 +3974,7 @@ result = s7_call(s7, hook, s7_list(s7, 2, s7_make_integer(s7, 1), s7_make_intege
 <p>Hooks are split into three list of functions to reflect the roles that
 hook functions play.
 Some are "watchers" that simply want notification
-that some event has occurred (the 'init' list).
+that some event has occurred (the 'initCombFilter' list).
 Others want to deal with the
 event in some way, possibly returning a result, and possibly interacting
 with any other similar hook functions' results (the 'body' list).
@@ -3998,7 +3998,7 @@ h
 (#&lt;lambda (hook)&gt;)
 &gt; (h 2.5)
 3.5
-&gt; (set! ((procedure-environment h) 'init) 
+&gt; (set! ((procedure-environment h) 'initCombFilter)
         (list (lambda (hook) ; if x is a string, convert it to a number
                 (if (string? (hook 'x)) 
                     (set! (hook 'x) (string-&gt;number (hook 'x)))))))
@@ -4500,7 +4500,7 @@ do that:
 <p>But this is less useful than map (it can't map over a hash-table for example),
 and is mostly reimplementing built-in code.  Perhaps s7 should have an extension
 of map (and more usefully, for-each) that is patterned after dynamic-wind:
-<code>(dynamic-for-each init-func main-func end-func . args)</code> where init-func
+<code>(dynamic-for-each initCombFilter-func main-func end-func . args)</code> where initCombFilter-func
 is called with one argument, the length of the shortest sequence argument (for-each
 and map know this in advance); main-func takes n arguments where n matches
 the number of sequences passed; and end-func is called even if a jump out of main-func
@@ -4515,7 +4515,7 @@ map-with-exit would be
   (let ((result ()))
     (call-with-exit
       (lambda (quit)
-        (apply dynamic-map #f ; no init-func in this case
+        (apply dynamic-map #f ; no initCombFilter-func in this case
                (lambda main-args 
                  (apply func quit main-args)) 
                (lambda (res) 
@@ -5424,7 +5424,7 @@ This should be named define-reader-macro.
 </div>
 
 <!-- null-environment does not fit very well; how to shadow earlier define-constant for example
-     one of which is initial-environment; perhaps make a special environment at init time? 
+     one of which is initial-environment; perhaps make a special environment at initCombFilter time?
      the code for that is save_null_environment, but it is untested and commented out.
 -->
 
@@ -7805,7 +7805,7 @@ static s7_pointer cload(s7_scheme *sc, s7_pointer args)
   library = dlopen(s7_string(s7_car(args)), RTLD_LAZY);
   if (library)
     {
-      /* call our init func to define add-1 in s7 */
+      /* call our initCombFilter func to define add-1 in s7 */
       void *init_func;
       init_func = <em class=red>dlsym</em>(library, s7_string(s7_car(s7_cdr(args))));
       if (init_func)

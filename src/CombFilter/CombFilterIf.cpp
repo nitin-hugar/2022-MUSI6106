@@ -64,31 +64,25 @@ Error_t CCombFilterIf::create (CCombFilterIf*& pCCombFilter)
 Error_t CCombFilterIf::destroy (CCombFilterIf*& pCCombFilter)
 {
     delete pCCombFilter;
-    pCCombFilter = NULL;
+    pCCombFilter = nullptr;
     return Error_t::kNoError;
 }
 
 Error_t CCombFilterIf::init (CombFilterType_t eFilterType, float fMaxDelayLengthInS, float fSampleRateInHz, int iNumChannels)
 {
 
-    switch(eFilterType)
+    if (eFilterType == kCombFIR)
     {
-        case(kCombFIR):
-            m_pCCombFilter -> init(fMaxDelayLengthInS, fSampleRateInHz, iNumChannels);
-
-            return Error_t::kNoError;
-            break;
-        
-        case (kCombIIR):
-            // Run IIR Filter
-            return Error_t::kNoError;
-            break;
-        
-        default:
-            // Run FIR Filter
-            return Error_t::kNoError;
-            break;
+        m_pCCombFilter = new CCombFilterFIR;
+        m_pCCombFilter -> initCombFilter(fMaxDelayLengthInS, fSampleRateInHz, iNumChannels);
     }
+    else if (eFilterType == kCombIIR)
+    {
+        m_pCCombFilter = new CCombFilterIIR;
+        m_pCCombFilter -> initCombFilter(fMaxDelayLengthInS, fSampleRateInHz, iNumChannels);
+    }
+
+
     return Error_t::kNoError;
 }
 
@@ -105,6 +99,7 @@ Error_t CCombFilterIf::reset ()
 
 Error_t CCombFilterIf::process (float **ppfInputBuffer, float **ppfOutputBuffer, int iNumberOfFrames)
 {
+
     return Error_t::kNoError;
 }
 
@@ -113,7 +108,7 @@ Error_t CCombFilterIf::setParam (FilterParam_t eParam, float fParamValue)
     switch (eParam)
     {
         case (FilterParam_t::kParamGain):
-            m_pCCombFilter -> init();
+            m_pCCombFilter -> setGain(fParamValue);
             break;
             
         case (FilterParam_t::kParamDelay):

@@ -200,7 +200,7 @@
 	 (c-file-name (string-append file-name ".c"))
 	 (o-file-name (string-append file-name ".o"))
 	 (so-file-name (string-append file-name ".so"))
-	 (init-name (if output-name
+	 (initCombFilter-name (if output-name
 			(string-append output-name "_init")
 			(string-append "init_" (number->string c-define-output-file-counter))))
 	 (functions ())
@@ -320,19 +320,19 @@
 
   
     (define (end-c-file)
-      ;; now the init function
+      ;; now the initCombFilter function
       ;;   the new scheme variables and functions are placed in the current environment
 
-      (format p "void ~A(s7_scheme *sc);~%" init-name)
-      (format p "void ~A(s7_scheme *sc)~%" init-name)
+      (format p "void ~A(s7_scheme *sc);~%" initCombFilter-name)
+      (format p "void ~A(s7_scheme *sc)~%" initCombFilter-name)
       (format p "{~%")
       (format p "  s7_pointer cur_env;~%")
       (format p "  cur_env = s7_outer_environment(s7_current_environment(sc));~%") ; this must exist because we pass load the env ourselves
       
       ;; send out any special initialization code
       (for-each
-       (lambda (init-str)
-	 (format p "  ~A~%" init-str))
+       (lambda (initCombFilter-str)
+	 (format p "  ~A~%" initCombFilter-str))
        (reverse inits))
 
       ;; "constants" -- actually variables in s7 because we want them to be local to the current environment
@@ -407,7 +407,7 @@
 	  (apply add-one-function func)
 	  (case (car func)
 	    ((in-C)       (format p "~A~%" (cadr func)))
-	    ((C-init)     (set! inits (cons (cadr func) inits)))
+	    ((C-initCombFilter)     (set! inits (cons (cadr func) inits)))
 	    ((C-macro)    (apply add-one-macro (cadr func)))
 	    ((C-function) (collides? (caadr func)) (set! functions (cons (cadr func) functions)))
 	    (else         (apply add-one-constant func)))))
@@ -437,7 +437,7 @@
     ;; load the obejct file, clean up
     (let ((new-env (augment-environment
 		       cur-env
-		     (cons 'init_func (string->symbol init-name)))))
+		     (cons 'init_func (string->symbol initCombFilter-name)))))
       (format *stderr* "loading ~A~%" so-file-name)
       (load so-file-name new-env))))
 

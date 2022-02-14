@@ -266,7 +266,7 @@
 
 #|
 ;;; ================================================================================
-;;; useful settings and functions for this work (I have these in my init file):
+;;; useful settings and functions for this work (I have these in my initCombFilter file):
 
 (define (clean-string e)
   ;; make the envelope lists look prettier
@@ -9614,13 +9614,13 @@
   
   (let ((ampf (make-env '(0 1 1 .8) :length 10))
 	(frqf (make-env (list 0 1 1 (/ 3050.0 3200.0)) :length 10))
-	(call-init 1.0))
+	(call-initCombFilter 1.0))
     
     (do ((call 0 (+ call 1)))
 	((= call 10))
       (let ((call-amp (env ampf))
 	    (call-frq (env frqf)))
-	(let ((call-beg (+ beg1 call-init (* call .15) (random .01))))
+	(let ((call-beg (+ beg1 call-initCombFilter (* call .15) (random .01))))
 	  (wrentit-1 call-beg (+ .03 (random .005)) (* amp1 call-amp) call-frq)
 	  (wrentit-2 (+ call-beg .048) (+ .06 (random .005)) (* amp1 call-amp) call-frq))))
     

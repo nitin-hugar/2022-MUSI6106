@@ -38,11 +38,12 @@ Error_t CCombFilterBase::setNumOfChannels (int fParamValue)
     mNumOfChannels = fParamValue;
 }
 
-Error_t CCombFilterBase::init(float fMaxDelayLengthInS, float fSampleRateInHz, int iNumChannels) {
+Error_t CCombFilterBase::initCombFilter(float fMaxDelayLengthInS, float fSampleRateInHz, int iNumChannels) {
 
+    mDelayInSamples = fMaxDelayLengthInS * fSampleRateInHz;
     pCRingBuff = new CRingBuffer<float>* [iNumChannels];
     setNumOfChannels(iNumChannels);
-    CCombFilterIf::setParam(CCombFilterIf::FilterParam_t::kParamDelay, fMaxDelayLengthInS * fSampleRateInHz );
+    CCombFilterIf::setParam(CCombFilterIf::FilterParam_t::kParamDelay, mDelayInSamples );
 
     for (int m =0; m < getNumOfChannels(); m++)
     {

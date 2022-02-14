@@ -12,7 +12,7 @@ class CCombFilterBase : public CCombFilterIf
 {
 public:
 
-    Error_t init(float fMaxDelayLengthInS, float fSampleRateInHz, int iNumChannels);
+    Error_t initCombFilter(float fMaxDelayLengthInS, float fSampleRateInHz, int iNumChannels);
     Error_t setGain(float fParamValue);
     Error_t setNumOfChannels (int fParamValue);
     Error_t setDelay(float fParamValue);

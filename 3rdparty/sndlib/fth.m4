@@ -74,9 +74,9 @@ AC_DEFUN([FTH_CHECK_LIB],
   FTH_HAVE_RATIO=no
   AC_MSG_CHECKING([for Forth])
   if test "${FTH}" != no ; then
-    FTH_VERSION=`${FTH} --no-init-file --eval .version`
-    FTH_CFLAGS=`${FTH} --no-init-file --eval .cflags`
-    FTH_LIBS=`${FTH} --no-init-file --eval .libs`
+    FTH_VERSION=`${FTH} --no-initCombFilter-file --eval .version`
+    FTH_CFLAGS=`${FTH} --no-initCombFilter-file --eval .cflags`
+    FTH_LIBS=`${FTH} --no-initCombFilter-file --eval .libs`
     AC_MSG_RESULT([FTH version ${FTH_VERSION}])
     fth_AC_CHECK_LIB([fth], [fth_make_complex], [FTH_HAVE_COMPLEX=yes],
     			    [whether FTH supports complex numbers], [${FTH_LIBS}])

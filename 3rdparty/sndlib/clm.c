@@ -12520,7 +12520,7 @@ mus_float_t mus_src_20(mus_any *srptr, mus_float_t (*input)(void *arg, int direc
     {
       /* first sample */
       int xs, xi;
-      /* fixup the "centering" at init time */
+      /* fixup the "centering" at initCombFilter time */
       srp->x = 2.0;
       sum = srp->data[srp->width - 1];
 
@@ -15531,7 +15531,7 @@ mus_float_t mus_apply(mus_any *gen, mus_float_t f1, mus_float_t f2)
 }
 
 
-/* ---------------- init clm ---------------- */
+/* ---------------- initCombFilter clm ---------------- */
 
 void mus_initialize(void)
 {

@@ -17,7 +17,7 @@ public:
     {
         assert(iBufferLengthInSamples > 0);
 
-        // allocate and init
+        // allocate and initCombFilter
     }
 
     virtual ~CRingBuffer()
