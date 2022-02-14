@@ -40,8 +40,8 @@ int main(int argc, char* argv[])
 
     std::string sInputFilePath = "/Users/apple/Desktop/4.wav";
     std::string sOutputFilePath = "/Users/apple/Desktop/filteredOutput.wav";
-    float delayTimeInSeconds = 1.5;
-    float gain = 0.5;
+    float delayTimeInSeconds = 0.5;
+    float gain = 1.0;
 
     // Initialize CombFilter
     CCombFilterIf *pCombFilter = nullptr;
@@ -89,12 +89,12 @@ int main(int argc, char* argv[])
 
     // Destroy and clear memory: Check if this is needed !
 
-//    if (ppfInputAudioData[0] == 0 || ppfOutputAudioData[0] == 0)
-//    {
-//        CAudioFileIf::destroy(phInputAudioFile);
-//        CAudioFileIf::destroy(phOutputAudioFile);
-//        return -1;
-//    }
+    if (ppfInputAudioData[0] == 0 || ppfOutputAudioData[0] == 0)
+    {
+        CAudioFileIf::destroy(phInputAudioFile);
+        CAudioFileIf::destroy(phOutputAudioFile);
+        return -1;
+    }
 
     //============================================================================
     // Create CombFilters and allocate memory
@@ -139,8 +139,8 @@ int main(int argc, char* argv[])
     CAudioFileIf::destroy(phOutputAudioFile);
     for(int m = 0; m < stFileSpec.iNumChannels; m++ )
     {
-        delete[] ppfInputAudioData;
-        delete[] ppfOutputAudioData;
+        delete[] ppfInputAudioData[m];
+        delete[] ppfOutputAudioData[m];
     }
     delete[] ppfInputAudioData;
     delete[] ppfOutputAudioData;
