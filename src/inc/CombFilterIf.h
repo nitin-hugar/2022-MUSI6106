@@ -4,7 +4,7 @@
 #include "ErrorDef.h"
 
 
-//class CCombFilterBase;
+class CCombFilterBase;
 
 /*! \brief interface class for the comb filter (FIR & IIR)
 */

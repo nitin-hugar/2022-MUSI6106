@@ -70,10 +70,12 @@ Error_t CCombFilterIf::destroy (CCombFilterIf*& pCCombFilter)
 
 Error_t CCombFilterIf::init (CombFilterType_t eFilterType, float fMaxDelayLengthInS, float fSampleRateInHz, int iNumChannels)
 {
+
     switch(eFilterType)
     {
         case(kCombFIR):
-            // Run FIR Filter
+            m_pCCombFilter -> init(fMaxDelayLengthInS, fSampleRateInHz, iNumChannels);
+
             return Error_t::kNoError;
             break;
         
@@ -111,7 +113,7 @@ Error_t CCombFilterIf::setParam (FilterParam_t eParam, float fParamValue)
     switch (eParam)
     {
         case (FilterParam_t::kParamGain):
-            m_pCCombFilter -> setGain(fParamValue);
+            m_pCCombFilter -> init();
             break;
             
         case (FilterParam_t::kParamDelay):
