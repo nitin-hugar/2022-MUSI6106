@@ -40,7 +40,7 @@ int main(int argc, char* argv[])
     std::string sInputFilePath = "/Users/apple/Desktop/4.wav";
     std::string sOutputFilePath = "/Users/apple/Desktop/filteredOutput.wav";
     float delayTimeInSeconds = 0.25;
-    float gain = 1.0;
+    float gain = 2.0;
 
     // Initialize CombFilter
     CCombFilterIf *pCombFilter;
@@ -100,7 +100,7 @@ int main(int argc, char* argv[])
     //============================================================================
 
     CCombFilterIf::create(pCombFilter);
-    pCombFilter ->init(eFilterType, delayTimeInSeconds,
+    pCombFilter -> init(eFilterType, delayTimeInSeconds,
                        stFileSpec.fSampleRateInHz ,
                        stFileSpec.iNumChannels);
     pCombFilter -> setParam(CCombFilterIf::FilterParam_t::kParamGain, gain );

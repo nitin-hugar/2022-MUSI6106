@@ -8,10 +8,14 @@
 #include "CombFilter.h"
 #include <iostream>
 
-CCombFilterBase :: CCombFilterBase()
+CCombFilterBase::CCombFilterBase()
 {
 }
 
+CCombFilterBase::~CCombFilterBase()
+{
+    this -> reset();
+}
 
 Error_t CCombFilterBase::setGain(float fParamValue)
 {
@@ -61,9 +65,6 @@ Error_t CCombFilterBase::initCombFilter(float fMaxDelayLengthInS, float fSampleR
 int CCombFilterBase::getNumOfChannels() {
     return mNumOfChannels;
 }
-
-
-
 
 Error_t CCombFilterFIR::process(float **ppfInputBuffer, float **ppfOutputBuffer, int iNumberOfFrames)
 
