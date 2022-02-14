@@ -16,15 +16,11 @@ class Filter
 {
 public:
 
-    Error_t setInputFilePath(std::string sFilepath);
-    Error_t setOutputFilePath(std::string sFilePath);
-    Error_t setFilterType(std::string sFiltertype);
-    Error_t setDelay(float fDelay);
-    Error_t setGain(float fGain);
+    Error_t setParams(std::string sInputFilePath,std::string sOutputFilePath,
+                      std::string sFilterType,float fDelay,
+                      float fGain, int iBlockSize);
 
-    Error_t processAudio(std::string sInputFilePath, std::string sOutputFilePath,
-                         std::string sFilterType,
-                         float fDelay, float fGain);
+    Error_t processAudio();
 
 private:
     std::string mInputFilePath,
@@ -33,6 +29,8 @@ private:
 
     float       mDelayInSeconds,
                 mGain;
+
+    int         mBlockSize;
 };
 
 

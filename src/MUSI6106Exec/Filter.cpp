@@ -4,42 +4,26 @@
 
 #include "Filter.h"
 
+Error_t Filter::setParams(std::string sInputFilePath, std::string sOutputFilePath,
+                          std::string sFilterType, float fDelay,
+                          float fGain, int iBlockSize){
 
-Error_t Filter::setInputFilePath(std::string sFilepath)
-{
-    mInputFilePath = sFilepath;
-    return Error_t::kNoError;
-}
-
-Error_t Filter::setOutputFilePath(std::string sFilePath)
-{
-    mOutputFilePath = sFilePath;
-    return Error_t::kNoError;
-}
-
-Error_t Filter::setFilterType(std::string sFiltertype) {
-    mFilterType = sFiltertype;
-    return Error_t::kNoError;
-}
-
-Error_t Filter::setDelay(float fDelay) {
+    mInputFilePath = sInputFilePath;
+    mOutputFilePath = sOutputFilePath;
+    mFilterType = sFilterType;
     mDelayInSeconds = fDelay;
-    return Error_t::kNoError;
-}
-
-Error_t Filter::setGain(float fGain) {
     mGain = fGain;
+    mBlockSize = iBlockSize;
+
     return Error_t::kNoError;
 }
 
-Error_t  Filter::processAudio(std::string sInputFilePath, std::string sOutputFilePath, std::string sFilterType, float fDelay,
-                     float fGain) {
 
+Error_t  Filter::processAudio()
+{
     //============================================================================
     // Initialize pointers and inputs
     //============================================================================
-
-    static const int kBlockSize = 1024;
 
     float                   **ppfInputAudioData = nullptr,
                             **ppfOutputAudioData = nullptr;;
@@ -58,14 +42,14 @@ Error_t  Filter::processAudio(std::string sInputFilePath, std::string sOutputFil
     CCombFilterIf::CombFilterType_t eFilterType;
 
 
-    delayTimeInSeconds = fDelay;
-    gain = fGain;
+    delayTimeInSeconds = mDelayInSeconds;
+    gain = mGain;
 
-    if (sFilterType == "FIR")
+    if (mFilterType == "FIR")
     {
         eFilterType = CCombFilterIf::kCombFIR;
     }
-    else if (sFilterType == "IIR") {
+    else if (mFilterType == "IIR") {
         eFilterType = CCombFilterIf::kCombIIR;
 
     }
@@ -75,7 +59,7 @@ Error_t  Filter::processAudio(std::string sInputFilePath, std::string sOutputFil
     //============================================================================
 
     CAudioFileIf::create(phInputAudioFile);
-    phInputAudioFile->openFile(sInputFilePath,
+    phInputAudioFile->openFile(mInputFilePath,
                                CAudioFileIf::kFileRead);
     if (!phInputAudioFile->isOpen())
     {
@@ -89,7 +73,7 @@ Error_t  Filter::processAudio(std::string sInputFilePath, std::string sOutputFil
     //============================================================================
 
     CAudioFileIf::create(phOutputAudioFile);
-    phOutputAudioFile -> openFile(sOutputFilePath,
+    phOutputAudioFile -> openFile(mOutputFilePath,
                                   CAudioFileIf::kFileWrite,
                                   &stFileSpec);
 
@@ -104,8 +88,8 @@ Error_t  Filter::processAudio(std::string sInputFilePath, std::string sOutputFil
     ppfOutputAudioData = new float* [stFileSpec.iNumChannels];
     for (int i = 0; i < stFileSpec.iNumChannels; i++)
     {
-        ppfInputAudioData[i] = new float[kBlockSize];
-        ppfOutputAudioData[i] = new float[kBlockSize];
+        ppfInputAudioData[i] = new float[mBlockSize];
+        ppfOutputAudioData[i] = new float[mBlockSize];
     }
 
     // Destroy and clear memory: Check if this is needed !
@@ -138,7 +122,7 @@ Error_t  Filter::processAudio(std::string sInputFilePath, std::string sOutputFil
     while (!phInputAudioFile->isEof())
     {
         // set block length variable
-        long long int iNumFrames = kBlockSize;
+        long long int iNumFrames = mBlockSize;
 
         // read data (iNumOfFrames might be updated!)
         phInputAudioFile->readData(ppfInputAudioData, iNumFrames);
@@ -147,7 +131,7 @@ Error_t  Filter::processAudio(std::string sInputFilePath, std::string sOutputFil
 
     }
 
-    cout << "Filtering complete! The output audio is saved at : " << sOutputFilePath << endl;
+    cout << "Filtering complete! The output audio is saved at : " << mOutputFilePath << endl;
 
     //============================================================================
     // Clean up and free memory
