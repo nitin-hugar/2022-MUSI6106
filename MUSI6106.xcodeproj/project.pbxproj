@@ -9,23 +9,23 @@
 /* Begin PBXAggregateTarget section */
 		118952D0AE904262B38AC1B5 /* ALL_BUILD */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = F0813BFF8FA04E758C111370 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildConfigurationList = 55230FE43A3D4676B5F01910 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
 			buildPhases = (
 				7616BC47BC25662D3C6D425A /* Generate CMakeFiles/ALL_BUILD */,
 			);
 			dependencies = (
-				23693392DCFC48CFB2F82394 /* PBXTargetDependency */,
-				6B22CEE0AE6B4A7EA1810357 /* PBXTargetDependency */,
-				099B9086A9234A71968204D3 /* PBXTargetDependency */,
-				36EF759AD67443F1AC2BE4EA /* PBXTargetDependency */,
-				21D919AD0D3F4EECAE08AFB6 /* PBXTargetDependency */,
+				6B8EA68BDCB246F4B5F2FB5D /* PBXTargetDependency */,
+				275710F60FB147CE87EA14FA /* PBXTargetDependency */,
+				08B1446F00B34894A367B7C8 /* PBXTargetDependency */,
+				DF9BEE35B8F74BED99B322CE /* PBXTargetDependency */,
+				D68DBB21508E43069A3F4ED6 /* PBXTargetDependency */,
 			);
 			name = ALL_BUILD;
 			productName = ALL_BUILD;
 		};
 		9F396627D3E34566BD5E97C4 /* ZERO_CHECK */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = 5732F9200B8549DD83C36397 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildConfigurationList = CF69B335CCCA439A90B0878C /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
 			buildPhases = (
 				9A9F350CA037D94B9231567D /* Generate CMakeFiles/ZERO_CHECK */,
 			);
@@ -37,252 +37,256 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		0019AE055D3C45F0A95FC12C /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/sndlib2xen.c */ = {isa = PBXBuildFile; fileRef = A98F96C398A348C1BB1714C0 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/sndlib2xen.c */; };
-		02EEACA39B9944A58E7182D9 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/xen.h */ = {isa = PBXBuildFile; fileRef = B7F6BEC1D9A54355A1B7BD19 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/xen.h */; };
-		079B6F2E063045CC8689D8AE /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/AudioFileIO/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 9BBD51E8F85647599A2965C4 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/AudioFileIO/CMakeLists.txt */; };
-		0ACB96A5C09E465194440B60 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/inc/AudioFileIf.h */ = {isa = PBXBuildFile; fileRef = CE9F0DC9BB0D489A9ABEAA19 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/inc/AudioFileIf.h */; };
-		0BF5DE426BE34E6E8949DDB4 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/CombFilter/CombFilter.h */ = {isa = PBXBuildFile; fileRef = A093C162930241C494D85B43 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/CombFilter/CombFilter.h */; };
-		0FCE3C7C02FF4A869852D2E4 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/unix-config.h */ = {isa = PBXBuildFile; fileRef = CD6CF837CBF347BEB071E2FB /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/unix-config.h */; };
-		195A3CC4C46D43E39A8617B5 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/AudioFileIO/AudioFile.h */ = {isa = PBXBuildFile; fileRef = C22D5F96F6F54B1296F2D2BD /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/AudioFileIO/AudioFile.h */; };
-		1E983DD08B174856B642FF1B /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/_sndlib.h */ = {isa = PBXBuildFile; fileRef = 361BC3B10E744B0AAF54AB10 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/_sndlib.h */; };
-		22EF1D90F6524A9BBB9D88AB /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/vct.c */ = {isa = PBXBuildFile; fileRef = 3610F069D27844B2ABE6C83D /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/vct.c */; };
-		24A8AB3F0A7647789DDAB8A6 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/inc/Util.h */ = {isa = PBXBuildFile; fileRef = B3635F74648649EFA15BA3F2 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/inc/Util.h */; };
-		24FC109A4D5445AFA8B4FABD /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/s7.h */ = {isa = PBXBuildFile; fileRef = AF6F243E6EDF466EB4FCE7BF /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/s7.h */; };
-		29F1D47118914E3EA1FF516B /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/sndlib.h */ = {isa = PBXBuildFile; fileRef = 099D991261DA4E218D3AB02C /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/sndlib.h */; };
-		2E27453655C1491EA72BB078 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/inc/Vector.h */ = {isa = PBXBuildFile; fileRef = 2CFB393E6B1646689F1CE749 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/inc/Vector.h */; };
-		31D58F0D008C4B1EB88E294F /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/sound.c */ = {isa = PBXBuildFile; fileRef = 66948DD2022148539A5E3A07 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/sound.c */; };
-		3A023F8D4DFD4D52AF3CF330 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/audio.c */ = {isa = PBXBuildFile; fileRef = B0AC67CFC5FE4082B36E39AF /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/audio.c */; };
-		4118A7F77F5E473CB638A51C /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/CombFilter/RingBuffer.h */ = {isa = PBXBuildFile; fileRef = 8B969FEC0D214AFEBF64CA48 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/CombFilter/RingBuffer.h */; };
-		57EC86B452C4437A9AC8BDD5 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/inc/RingBuffer.h */ = {isa = PBXBuildFile; fileRef = 208BBC7DB5354B8BB629BCFA /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/inc/RingBuffer.h */; };
-		634FB8F14343405F99881FA7 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/io.c */ = {isa = PBXBuildFile; fileRef = 7CB01892E1CE44278F51B7BF /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/io.c */; };
-		6834A1A0384648F094960C2B /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/sndlib2xen.h */ = {isa = PBXBuildFile; fileRef = FFC179B977544D3CBA8DEAB0 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/sndlib2xen.h */; };
-		6BF334C5DD5C4623AE15F135 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/xen.c */ = {isa = PBXBuildFile; fileRef = 72E672E5D33045FA990F824B /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/xen.c */; };
-		73467B011DC940CEAADD6C01 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/clm.c */ = {isa = PBXBuildFile; fileRef = E383A9E6011C46E28DB4F376 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/clm.c */; };
-		736F83812BA2449C96C9E244 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/headers.c */ = {isa = PBXBuildFile; fileRef = 122B8D42CA694B12BD4DBAC9 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/headers.c */; };
-		7388CF8F08EB4FD8837770AA /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/clm-strings.h */ = {isa = PBXBuildFile; fileRef = D03B10830B714438983A7535 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/clm-strings.h */; };
-		767422905ADB465E92D2DCE0 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/inc/CombFilterIf.h */ = {isa = PBXBuildFile; fileRef = F1FB1FCE88FC401E8F974EF4 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/inc/CombFilterIf.h */; };
-		84E3CA4CCD1B4AC19F000EB9 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/mus-config.h */ = {isa = PBXBuildFile; fileRef = C8A0E8A48B544A929C84E4B1 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/mus-config.h */; };
-		85543B5F99554BCA997033DC /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/clm2xen.c */ = {isa = PBXBuildFile; fileRef = 813F04ADC3704F6B9A4DFDD8 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/clm2xen.c */; };
-		870B730E7D3840919B61BA1D /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/AudioFileIO/AudioFile.cpp */ = {isa = PBXBuildFile; fileRef = 9DF65FDFCBC1478083E5F24E /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/AudioFileIO/AudioFile.cpp */; };
-		96E352262F964F26A094152D /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 2AD143983E9D471C82DB288E /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/CMakeLists.txt */; };
-		9F459F94944446E991B469B6 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/inc/Util.h */ = {isa = PBXBuildFile; fileRef = 45C9266E79BF412AA6029C2B /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/inc/Util.h */; };
-		A1ADE2C67E6A47D0BA2579D0 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/CombFilter/CombFilter.cpp */ = {isa = PBXBuildFile; fileRef = 207EB0B1A8BF48FD9A7C9A3F /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/CombFilter/CombFilter.cpp */; };
-		A32734FC5097459C8A8DE612 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/sndlib-strings.h */ = {isa = PBXBuildFile; fileRef = 3B3DD4C81E1A4AD09533E288 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/sndlib-strings.h */; };
-		A4B7F726D6B846CCB33620D5 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/vct.h */ = {isa = PBXBuildFile; fileRef = 8B83766BC1844FCDAFD2D3F6 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/vct.h */; };
-		AFE5BA1419B8416EA99234EE /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/CombFilter/CombFilterIf.cpp */ = {isa = PBXBuildFile; fileRef = 7A5AFACF74F34868946CC4BE /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/CombFilter/CombFilterIf.cpp */; };
-		B47449FF8B374FD1A5335401 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/inc/AudioFileIf.h */ = {isa = PBXBuildFile; fileRef = 407BF8DB7B2D4E3699C8E81D /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/inc/AudioFileIf.h */; };
-		C25F498844014170A81B8ECD /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/inc/CombFilterIf.h */ = {isa = PBXBuildFile; fileRef = CB1518DC30DB442CBDED0D4B /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/inc/CombFilterIf.h */; };
-		C2882B88FB6D4F4580A63B6E /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/CombFilter/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 90E9A53E4FC944629C6EA8AC /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/CombFilter/CMakeLists.txt */; };
-		C3C33C90661C4C89AAB5B6B0 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/s7.c */ = {isa = PBXBuildFile; fileRef = 43A4D159AAFB45D69CC245B6 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/s7.c */; };
-		C5CBAFC289134DFF83B5A43F /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/inc/RingBuffer.h */ = {isa = PBXBuildFile; fileRef = 34C94DCE288C4ACE9BAB381A /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/inc/RingBuffer.h */; };
-		CCEDA63EA89A4182A54F7F20 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/clm.h */ = {isa = PBXBuildFile; fileRef = 3777913D24A446029BDAED9E /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/clm.h */; };
-		D3C5430ECBA54811B9C548B6 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/MUSI6106Exec/MUSI6106Exec.cpp */ = {isa = PBXBuildFile; fileRef = F243222C7C3D4E9881ED7675 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/MUSI6106Exec/MUSI6106Exec.cpp */; };
-		DE64AC52EF334728B78C6C7B /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/AudioFileIO/AudioFileIf.cpp */ = {isa = PBXBuildFile; fileRef = 19D4157488264CF1B704AC7C /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/AudioFileIO/AudioFileIf.cpp */; };
-		E9FE0C86B2BC47CE829D7620 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/MUSI6106Exec/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = EAC06457632F4D3996A0BC62 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/MUSI6106Exec/CMakeLists.txt */; };
-		ED027F1362C246D1B9F12716 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/clm2xen.h */ = {isa = PBXBuildFile; fileRef = CF81AF42574F4FB5866F6315 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/clm2xen.h */; };
-		F1BBED8353D341E080BAC036 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/inc/Vector.h */ = {isa = PBXBuildFile; fileRef = 9D6030841DE1490D9A7C66F1 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/inc/Vector.h */; };
+		05C21BC8A57A4D04B5C5363F /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = D24BB99906D645EEB61ED107 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/CMakeLists.txt */; };
+		06029E28A1144C1AB35935D3 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/sndlib2xen.c */ = {isa = PBXBuildFile; fileRef = 2B697CDB062D44E1A0BBF20A /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/sndlib2xen.c */; };
+		06B92835162744789A2F8669 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/MUSI6106Exec/Filter.h */ = {isa = PBXBuildFile; fileRef = 93D23EB8452749B78372C62C /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/MUSI6106Exec/Filter.h */; };
+		0874C26D946444BC864AC51A /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/inc/CombFilterIf.h */ = {isa = PBXBuildFile; fileRef = 24558CF993824678BC5703D6 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/inc/CombFilterIf.h */; };
+		0ADBA53BCB194C96937C5389 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/MUSI6106Exec/Filter.cpp */ = {isa = PBXBuildFile; fileRef = 63C1DE89F364477BB0B0C6AF /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/MUSI6106Exec/Filter.cpp */; };
+		2065A5C58FDD4F8CB4B7BD1A /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/_sndlib.h */ = {isa = PBXBuildFile; fileRef = D699E57FA111487FBE9FD25C /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/_sndlib.h */; };
+		21657B19E1DF45388A22FCC9 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/vct.c */ = {isa = PBXBuildFile; fileRef = 071EA70B8DD0487DB469D542 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/vct.c */; };
+		2199B76700434FC9812F3BCE /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/mus-config.h */ = {isa = PBXBuildFile; fileRef = 59D5AA99983E4842B08E19D1 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/mus-config.h */; };
+		3167D2FF79F24233AD269E69 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/inc/Vector.h */ = {isa = PBXBuildFile; fileRef = 8223FECCF61C4BE19930B25E /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/inc/Vector.h */; };
+		32F72260B99F4D369B4BF1D1 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/AudioFileIO/AudioFile.cpp */ = {isa = PBXBuildFile; fileRef = 90C3F6BF60624FFD94918B8B /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/AudioFileIO/AudioFile.cpp */; };
+		3D0F7469685646178E611D53 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/io.c */ = {isa = PBXBuildFile; fileRef = D9DDC9C8EB4F4737AFA02988 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/io.c */; };
+		41EB65B4373540BB9D4C8015 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/sndlib-strings.h */ = {isa = PBXBuildFile; fileRef = C2F18770B4144251B5CBE075 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/sndlib-strings.h */; };
+		455B5E5719F94D0792904091 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/inc/RingBuffer.h */ = {isa = PBXBuildFile; fileRef = A6ECF4820C5943E7BA9F7053 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/inc/RingBuffer.h */; };
+		473B42D4AAC14E98B80979D4 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/inc/AudioFileIf.h */ = {isa = PBXBuildFile; fileRef = E4BD8ED8FA0A41CBA1696A03 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/inc/AudioFileIf.h */; };
+		53B0E81DBA07409B9A7A931D /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/sndlib.h */ = {isa = PBXBuildFile; fileRef = 470AF1B7703F4B8F87718E06 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/sndlib.h */; };
+		5915B3A8D34442AA9627CA4C /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/unix-config.h */ = {isa = PBXBuildFile; fileRef = 4C316BC6E7A2429BAED012C0 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/unix-config.h */; };
+		5E1AB7FC3ED04B0A893A656B /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/sound.c */ = {isa = PBXBuildFile; fileRef = 32B05EADC31F4D4FA1E345AA /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/sound.c */; };
+		5FD457EE37F849C586A6513F /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/AudioFileIO/AudioFile.h */ = {isa = PBXBuildFile; fileRef = 875F59CF622F48039B3E85E4 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/AudioFileIO/AudioFile.h */; };
+		7180A8398F324497A18CC319 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/inc/AudioFileIf.h */ = {isa = PBXBuildFile; fileRef = D80F73A6A40F458184E6C0ED /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/inc/AudioFileIf.h */; };
+		7DED311114B6461097930DFC /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/sndlib2xen.h */ = {isa = PBXBuildFile; fileRef = 55A47AEC627D4E72947EB92C /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/sndlib2xen.h */; };
+		8AD7E933FC0B460A9A85CD68 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/vct.h */ = {isa = PBXBuildFile; fileRef = 63EED431282142308450E27B /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/vct.h */; };
+		8CAA461C929042E086CCAE55 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/audio.c */ = {isa = PBXBuildFile; fileRef = A92A8081E3BE417D87A124F5 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/audio.c */; };
+		91A3838F813A4C45829A06C8 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/xen.h */ = {isa = PBXBuildFile; fileRef = 0A15688BA4724110B7B6E9A6 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/xen.h */; };
+		925908FFFB824BD4B5C0CCF4 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/clm2xen.h */ = {isa = PBXBuildFile; fileRef = C6D2EBB19E4A46C095AF3E23 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/clm2xen.h */; };
+		9B33295A4335485AB9A72565 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/inc/CombFilterIf.h */ = {isa = PBXBuildFile; fileRef = 5D800C8EDF234FCA9D30AD7F /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/inc/CombFilterIf.h */; };
+		9BE2FAEE3D344766A0F5E398 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/headers.c */ = {isa = PBXBuildFile; fileRef = 1032AC59F5384E0D95431088 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/headers.c */; };
+		A44DF0B9E4064EF3B9EF0413 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/inc/RingBuffer.h */ = {isa = PBXBuildFile; fileRef = 9F34DCA7859B4CF0816D38EE /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/inc/RingBuffer.h */; };
+		A6CDCDD1463C4FC580A97124 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/clm-strings.h */ = {isa = PBXBuildFile; fileRef = 0064FB6CEC7347C183A4EA08 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/clm-strings.h */; };
+		A73AABFBD0644F4CBC289932 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/clm2xen.c */ = {isa = PBXBuildFile; fileRef = 2BD45B17F2E04BB6A757AB37 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/clm2xen.c */; };
+		ADBA13B0CEB241C98ABC9FBA /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/xen.c */ = {isa = PBXBuildFile; fileRef = 62E2BC434BC84A119F6B38A2 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/xen.c */; };
+		AFD24B14C0D84D5A893CC075 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/clm.h */ = {isa = PBXBuildFile; fileRef = E5DEF69D6BC34220900CE6A0 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/clm.h */; };
+		B61B577E29D74ACDB07D432A /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/inc/Util.h */ = {isa = PBXBuildFile; fileRef = A4C047443AB341C59D2795BC /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/inc/Util.h */; };
+		B70BC09B191346B1A61B70C3 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/CombFilter/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = EE1EE821774748D9AE175B46 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/CombFilter/CMakeLists.txt */; };
+		BEC3CC98C4CD4CC2B0E63B93 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/CombFilter/CombFilter.h */ = {isa = PBXBuildFile; fileRef = FBE262FF496A404AACD562A7 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/CombFilter/CombFilter.h */; };
+		BFED76C6A4484D0FB74E9594 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/s7.c */ = {isa = PBXBuildFile; fileRef = B381540B326B48999C05E06D /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/s7.c */; };
+		CB9AA58D97D1418C8AFADE95 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/AudioFileIO/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 062615FA8AA4488D94068550 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/AudioFileIO/CMakeLists.txt */; };
+		CBF27A2B1F0B44AC8D73D433 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/CombFilter/CombFilterIf.cpp */ = {isa = PBXBuildFile; fileRef = 935BAA42871A413F88F69945 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/CombFilter/CombFilterIf.cpp */; };
+		CD69B58A2ACE49B0B431D8B3 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/MUSI6106Exec/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = F8FEBE5C7FC34009960CA537 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/MUSI6106Exec/CMakeLists.txt */; };
+		DF9F2678F3BA4DFA95699D02 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/s7.h */ = {isa = PBXBuildFile; fileRef = 7AD2230ADC1748059F008B3B /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/s7.h */; };
+		E4B4AD6B1BA34430B088E635 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/inc/Util.h */ = {isa = PBXBuildFile; fileRef = 6877A2A0813F4E64B044840D /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/inc/Util.h */; };
+		E781CE3195A142D8B17FA113 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/AudioFileIO/AudioFileIf.cpp */ = {isa = PBXBuildFile; fileRef = 40CC20F35D464DF88EC51A8B /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/AudioFileIO/AudioFileIf.cpp */; };
+		E7B63742256A477187E4B5DD /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/MUSI6106Exec/MUSI6106Exec.cpp */ = {isa = PBXBuildFile; fileRef = 9BDD163C399045A98551C03D /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/MUSI6106Exec/MUSI6106Exec.cpp */; };
+		EAA71D2EB76542CEB289CAE7 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/clm.c */ = {isa = PBXBuildFile; fileRef = 1E9C97B0A1B34004B710924D /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/clm.c */; };
+		EB9638AF2BC74BD799C49C2F /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/CombFilter/RingBuffer.h */ = {isa = PBXBuildFile; fileRef = 413B6290255F4B92AA1047E3 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/CombFilter/RingBuffer.h */; };
+		EC9C7682C7D4469DAD00D460 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/inc/Vector.h */ = {isa = PBXBuildFile; fileRef = B08A4F9A82F44DD69FDA5374 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/inc/Vector.h */; };
+		FE14727D19F646CB98F053AC /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/CombFilter/CombFilter.cpp */ = {isa = PBXBuildFile; fileRef = A50E8378844747F2B2FE1E61 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/CombFilter/CombFilter.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXBuildStyle section */
-		33E1C730E5A14AF39A2D3992 /* RelWithDebInfo */ = {
-			isa = PBXBuildStyle;
-			buildSettings = {
-				COPY_PHASE_STRIP = NO;
-			};
-			name = RelWithDebInfo;
-		};
-		5E517578CE2D430CB8CD6329 /* MinSizeRel */ = {
+		1555B53ABDF74DF69DCAB5F4 /* MinSizeRel */ = {
 			isa = PBXBuildStyle;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
 			};
 			name = MinSizeRel;
 		};
-		7E6A7D41589B4404A557B637 /* Debug */ = {
+		E0AAE556064943D584E0EB43 /* RelWithDebInfo */ = {
 			isa = PBXBuildStyle;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
 			};
-			name = Debug;
+			name = RelWithDebInfo;
 		};
-		EFCFBCC0A1484D70AB4D33BF /* Release */ = {
+		E23B3402E5EA4976BC8438BD /* Release */ = {
 			isa = PBXBuildStyle;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
 			};
 			name = Release;
 		};
+		F61946107B804BFB86ECC9F3 /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
 /* End PBXBuildStyle section */
 
 /* Begin PBXContainerItemProxy section */
-		012D791BB8884909B02E26AB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2CC2C28A2C474CB1A6890E75 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 36D7B08CD4D343959AA1F1FC;
-			remoteInfo = sndlib;
-		};
-		1F68CF9993D24AE1AF4F7973 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2CC2C28A2C474CB1A6890E75 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4E4C051669C94FE5A9871415;
-			remoteInfo = CombFilter;
-		};
-		346F1970F5E24A738304626D /* PBXContainerItemProxy */ = {
+		29E8B2A6DA8E47B1A2C2A172 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2CC2C28A2C474CB1A6890E75 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 9F396627D3E34566BD5E97C4;
 			remoteInfo = ZERO_CHECK;
 		};
-		3720B0714ACD411FAE32C3D9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2CC2C28A2C474CB1A6890E75 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 36D7B08CD4D343959AA1F1FC;
-			remoteInfo = sndlib;
-		};
-		37EE7559252A476F86C55B66 /* PBXContainerItemProxy */ = {
+		513A7FB2D3164D8792EB7A6E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2CC2C28A2C474CB1A6890E75 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 8CEB25A5EE304A86970AD704;
 			remoteInfo = AudioFileIO;
 		};
-		484256C91D2642CC9505C5C0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2CC2C28A2C474CB1A6890E75 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 8CEB25A5EE304A86970AD704;
-			remoteInfo = AudioFileIO;
-		};
-		73DC041046794EB985CD80B6 /* PBXContainerItemProxy */ = {
+		546D0E380AAB462E8CD8B120 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2CC2C28A2C474CB1A6890E75 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 9F396627D3E34566BD5E97C4;
 			remoteInfo = ZERO_CHECK;
 		};
-		77FB0C0303E24F2AB5379C37 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2CC2C28A2C474CB1A6890E75 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 9F396627D3E34566BD5E97C4;
-			remoteInfo = ZERO_CHECK;
-		};
-		89F33578504B4050BBDDF4B1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2CC2C28A2C474CB1A6890E75 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 9F396627D3E34566BD5E97C4;
-			remoteInfo = ZERO_CHECK;
-		};
-		9AD870B51DAF4DEF940B2DD7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2CC2C28A2C474CB1A6890E75 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4E4C051669C94FE5A9871415;
-			remoteInfo = CombFilter;
-		};
-		AE82DD7A931841CFBB5C0C66 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2CC2C28A2C474CB1A6890E75 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 9F396627D3E34566BD5E97C4;
-			remoteInfo = ZERO_CHECK;
-		};
-		C7A584E8B94747FCAA01AE97 /* PBXContainerItemProxy */ = {
+		5D2CA22AF95A4934B6957A5B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2CC2C28A2C474CB1A6890E75 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 36D7B08CD4D343959AA1F1FC;
 			remoteInfo = sndlib;
 		};
-		D2D89DBC5DBA411E859AB628 /* PBXContainerItemProxy */ = {
+		71DDFE0C8BF74079904A3028 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2CC2C28A2C474CB1A6890E75 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8CEB25A5EE304A86970AD704;
+			remoteInfo = AudioFileIO;
+		};
+		7ECFBAA1E245410693612AB1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2CC2C28A2C474CB1A6890E75 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9F396627D3E34566BD5E97C4;
+			remoteInfo = ZERO_CHECK;
+		};
+		969E266C3B0C444696919FA0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2CC2C28A2C474CB1A6890E75 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9F396627D3E34566BD5E97C4;
+			remoteInfo = ZERO_CHECK;
+		};
+		B6EBEF2221984EEA82CE72FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2CC2C28A2C474CB1A6890E75 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4E4C051669C94FE5A9871415;
+			remoteInfo = CombFilter;
+		};
+		D7E37391A27B411D8E82BEE0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2CC2C28A2C474CB1A6890E75 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 5F768F2CD445461DB836A699;
 			remoteInfo = MUSI6106Exec;
 		};
+		DE4D2B91C2F9449D9616C6A8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2CC2C28A2C474CB1A6890E75 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 36D7B08CD4D343959AA1F1FC;
+			remoteInfo = sndlib;
+		};
+		E3490B391C2A48C88A21D488 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2CC2C28A2C474CB1A6890E75 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9F396627D3E34566BD5E97C4;
+			remoteInfo = ZERO_CHECK;
+		};
+		E51B74321A5A41B596191EFF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2CC2C28A2C474CB1A6890E75 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 36D7B08CD4D343959AA1F1FC;
+			remoteInfo = sndlib;
+		};
+		E9180BE63EC24BE18012CB16 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2CC2C28A2C474CB1A6890E75 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4E4C051669C94FE5A9871415;
+			remoteInfo = CombFilter;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		099D991261DA4E218D3AB02C /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/sndlib.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = sndlib.h; path = 3rdparty/sndlib/sndlib.h; sourceTree = SOURCE_ROOT; };
-		122B8D42CA694B12BD4DBAC9 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/headers.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = headers.c; path = 3rdparty/sndlib/headers.c; sourceTree = SOURCE_ROOT; };
-		12D5B34590034A548AF58E24 /* MUSI6106Exec */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = MUSI6106Exec; sourceTree = BUILT_PRODUCTS_DIR; };
-		12F0F5D1A3FF4E50A9122CF6 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
-		19D4157488264CF1B704AC7C /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/AudioFileIO/AudioFileIf.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = AudioFileIf.cpp; path = src/AudioFileIO/AudioFileIf.cpp; sourceTree = SOURCE_ROOT; };
-		207EB0B1A8BF48FD9A7C9A3F /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/CombFilter/CombFilter.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = CombFilter.cpp; path = src/CombFilter/CombFilter.cpp; sourceTree = SOURCE_ROOT; };
-		208BBC7DB5354B8BB629BCFA /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/inc/RingBuffer.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = RingBuffer.h; path = src/inc/RingBuffer.h; sourceTree = SOURCE_ROOT; };
-		2AD143983E9D471C82DB288E /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = 3rdparty/sndlib/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
-		2CFB393E6B1646689F1CE749 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/inc/Vector.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Vector.h; path = src/inc/Vector.h; sourceTree = SOURCE_ROOT; };
-		34C94DCE288C4ACE9BAB381A /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/inc/RingBuffer.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = RingBuffer.h; path = src/inc/RingBuffer.h; sourceTree = SOURCE_ROOT; };
-		3610F069D27844B2ABE6C83D /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/vct.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = vct.c; path = 3rdparty/sndlib/vct.c; sourceTree = SOURCE_ROOT; };
-		361BC3B10E744B0AAF54AB10 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/_sndlib.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = _sndlib.h; path = 3rdparty/sndlib/_sndlib.h; sourceTree = SOURCE_ROOT; };
-		3777913D24A446029BDAED9E /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/clm.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = clm.h; path = 3rdparty/sndlib/clm.h; sourceTree = SOURCE_ROOT; };
-		3B3DD4C81E1A4AD09533E288 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/sndlib-strings.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = "sndlib-strings.h"; path = "3rdparty/sndlib/sndlib-strings.h"; sourceTree = SOURCE_ROOT; };
-		407BF8DB7B2D4E3699C8E81D /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/inc/AudioFileIf.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = AudioFileIf.h; path = src/inc/AudioFileIf.h; sourceTree = SOURCE_ROOT; };
-		43A4D159AAFB45D69CC245B6 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/s7.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = s7.c; path = 3rdparty/sndlib/s7.c; sourceTree = SOURCE_ROOT; };
-		45C9266E79BF412AA6029C2B /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/inc/Util.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Util.h; path = src/inc/Util.h; sourceTree = SOURCE_ROOT; };
-		66948DD2022148539A5E3A07 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/sound.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = sound.c; path = 3rdparty/sndlib/sound.c; sourceTree = SOURCE_ROOT; };
-		72E672E5D33045FA990F824B /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/xen.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = xen.c; path = 3rdparty/sndlib/xen.c; sourceTree = SOURCE_ROOT; };
-		7A5AFACF74F34868946CC4BE /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/CombFilter/CombFilterIf.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = CombFilterIf.cpp; path = src/CombFilter/CombFilterIf.cpp; sourceTree = SOURCE_ROOT; };
-		7CB01892E1CE44278F51B7BF /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/io.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = io.c; path = 3rdparty/sndlib/io.c; sourceTree = SOURCE_ROOT; };
-		813F04ADC3704F6B9A4DFDD8 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/clm2xen.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = clm2xen.c; path = 3rdparty/sndlib/clm2xen.c; sourceTree = SOURCE_ROOT; };
-		8B83766BC1844FCDAFD2D3F6 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/vct.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = vct.h; path = 3rdparty/sndlib/vct.h; sourceTree = SOURCE_ROOT; };
-		8B969FEC0D214AFEBF64CA48 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/CombFilter/RingBuffer.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = RingBuffer.h; path = src/CombFilter/RingBuffer.h; sourceTree = SOURCE_ROOT; };
-		90E9A53E4FC944629C6EA8AC /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/CombFilter/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = src/CombFilter/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
-		9BBD51E8F85647599A2965C4 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/AudioFileIO/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = src/AudioFileIO/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
-		9D6030841DE1490D9A7C66F1 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/inc/Vector.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Vector.h; path = src/inc/Vector.h; sourceTree = SOURCE_ROOT; };
-		9DF65FDFCBC1478083E5F24E /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/AudioFileIO/AudioFile.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = AudioFile.cpp; path = src/AudioFileIO/AudioFile.cpp; sourceTree = SOURCE_ROOT; };
-		A093C162930241C494D85B43 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/CombFilter/CombFilter.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = CombFilter.h; path = src/CombFilter/CombFilter.h; sourceTree = SOURCE_ROOT; };
-		A98F96C398A348C1BB1714C0 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/sndlib2xen.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = sndlib2xen.c; path = 3rdparty/sndlib/sndlib2xen.c; sourceTree = SOURCE_ROOT; };
-		AF6F243E6EDF466EB4FCE7BF /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/s7.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = s7.h; path = 3rdparty/sndlib/s7.h; sourceTree = SOURCE_ROOT; };
-		B0AC67CFC5FE4082B36E39AF /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/audio.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = audio.c; path = 3rdparty/sndlib/audio.c; sourceTree = SOURCE_ROOT; };
-		B3635F74648649EFA15BA3F2 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/inc/Util.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Util.h; path = src/inc/Util.h; sourceTree = SOURCE_ROOT; };
-		B523B6BE68E943DFAAEDE4FC /* CombFilter */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libCombFilter.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		B7F6BEC1D9A54355A1B7BD19 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/xen.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = xen.h; path = 3rdparty/sndlib/xen.h; sourceTree = SOURCE_ROOT; };
-		C22D5F96F6F54B1296F2D2BD /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/AudioFileIO/AudioFile.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = AudioFile.h; path = src/AudioFileIO/AudioFile.h; sourceTree = SOURCE_ROOT; };
-		C8A0E8A48B544A929C84E4B1 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/mus-config.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = "mus-config.h"; path = "3rdparty/sndlib/mus-config.h"; sourceTree = SOURCE_ROOT; };
-		CB1518DC30DB442CBDED0D4B /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/inc/CombFilterIf.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = CombFilterIf.h; path = src/inc/CombFilterIf.h; sourceTree = SOURCE_ROOT; };
-		CD6CF837CBF347BEB071E2FB /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/unix-config.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = "unix-config.h"; path = "3rdparty/sndlib/unix-config.h"; sourceTree = SOURCE_ROOT; };
-		CE9F0DC9BB0D489A9ABEAA19 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/inc/AudioFileIf.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = AudioFileIf.h; path = src/inc/AudioFileIf.h; sourceTree = SOURCE_ROOT; };
-		CF81AF42574F4FB5866F6315 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/clm2xen.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = clm2xen.h; path = 3rdparty/sndlib/clm2xen.h; sourceTree = SOURCE_ROOT; };
-		D03B10830B714438983A7535 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/clm-strings.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = "clm-strings.h"; path = "3rdparty/sndlib/clm-strings.h"; sourceTree = SOURCE_ROOT; };
-		D52EFD41E8B44DE488D642CD /* AudioFileIO */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libAudioFileIO.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		E383A9E6011C46E28DB4F376 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/clm.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = clm.c; path = 3rdparty/sndlib/clm.c; sourceTree = SOURCE_ROOT; };
-		EAC06457632F4D3996A0BC62 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/MUSI6106Exec/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = src/MUSI6106Exec/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
-		F1FB1FCE88FC401E8F974EF4 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/inc/CombFilterIf.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = CombFilterIf.h; path = src/inc/CombFilterIf.h; sourceTree = SOURCE_ROOT; };
-		F243222C7C3D4E9881ED7675 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/MUSI6106Exec/MUSI6106Exec.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = MUSI6106Exec.cpp; path = src/MUSI6106Exec/MUSI6106Exec.cpp; sourceTree = SOURCE_ROOT; };
-		F87789D274754B8DBFA17B00 /* sndlib */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libsndlib.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		FFC179B977544D3CBA8DEAB0 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/sndlib2xen.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = sndlib2xen.h; path = 3rdparty/sndlib/sndlib2xen.h; sourceTree = SOURCE_ROOT; };
+		0064FB6CEC7347C183A4EA08 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/clm-strings.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = "clm-strings.h"; path = "3rdparty/sndlib/clm-strings.h"; sourceTree = SOURCE_ROOT; };
+		062615FA8AA4488D94068550 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/AudioFileIO/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = src/AudioFileIO/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		071EA70B8DD0487DB469D542 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/vct.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = vct.c; path = 3rdparty/sndlib/vct.c; sourceTree = SOURCE_ROOT; };
+		08989C04A1A341528BFB394A /* CombFilter */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libCombFilter.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A15688BA4724110B7B6E9A6 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/xen.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = xen.h; path = 3rdparty/sndlib/xen.h; sourceTree = SOURCE_ROOT; };
+		1032AC59F5384E0D95431088 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/headers.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = headers.c; path = 3rdparty/sndlib/headers.c; sourceTree = SOURCE_ROOT; };
+		1E9C97B0A1B34004B710924D /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/clm.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = clm.c; path = 3rdparty/sndlib/clm.c; sourceTree = SOURCE_ROOT; };
+		214BD70F48D94F8588638C1C /* AudioFileIO */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libAudioFileIO.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		24558CF993824678BC5703D6 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/inc/CombFilterIf.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = CombFilterIf.h; path = src/inc/CombFilterIf.h; sourceTree = SOURCE_ROOT; };
+		2B697CDB062D44E1A0BBF20A /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/sndlib2xen.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = sndlib2xen.c; path = 3rdparty/sndlib/sndlib2xen.c; sourceTree = SOURCE_ROOT; };
+		2BD45B17F2E04BB6A757AB37 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/clm2xen.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = clm2xen.c; path = 3rdparty/sndlib/clm2xen.c; sourceTree = SOURCE_ROOT; };
+		32B05EADC31F4D4FA1E345AA /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/sound.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = sound.c; path = 3rdparty/sndlib/sound.c; sourceTree = SOURCE_ROOT; };
+		38EB6A0F43CE4F418420F2CD /* sndlib */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libsndlib.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		40CC20F35D464DF88EC51A8B /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/AudioFileIO/AudioFileIf.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = AudioFileIf.cpp; path = src/AudioFileIO/AudioFileIf.cpp; sourceTree = SOURCE_ROOT; };
+		413B6290255F4B92AA1047E3 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/CombFilter/RingBuffer.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = RingBuffer.h; path = src/CombFilter/RingBuffer.h; sourceTree = SOURCE_ROOT; };
+		470AF1B7703F4B8F87718E06 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/sndlib.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = sndlib.h; path = 3rdparty/sndlib/sndlib.h; sourceTree = SOURCE_ROOT; };
+		4C316BC6E7A2429BAED012C0 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/unix-config.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = "unix-config.h"; path = "3rdparty/sndlib/unix-config.h"; sourceTree = SOURCE_ROOT; };
+		4E8267D152224E579DC64514 /* MUSI6106Exec */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = MUSI6106Exec; sourceTree = BUILT_PRODUCTS_DIR; };
+		55A47AEC627D4E72947EB92C /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/sndlib2xen.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = sndlib2xen.h; path = 3rdparty/sndlib/sndlib2xen.h; sourceTree = SOURCE_ROOT; };
+		59D5AA99983E4842B08E19D1 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/mus-config.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = "mus-config.h"; path = "3rdparty/sndlib/mus-config.h"; sourceTree = SOURCE_ROOT; };
+		5D800C8EDF234FCA9D30AD7F /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/inc/CombFilterIf.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = CombFilterIf.h; path = src/inc/CombFilterIf.h; sourceTree = SOURCE_ROOT; };
+		62E2BC434BC84A119F6B38A2 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/xen.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = xen.c; path = 3rdparty/sndlib/xen.c; sourceTree = SOURCE_ROOT; };
+		63C1DE89F364477BB0B0C6AF /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/MUSI6106Exec/Filter.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Filter.cpp; path = src/MUSI6106Exec/Filter.cpp; sourceTree = SOURCE_ROOT; };
+		63EED431282142308450E27B /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/vct.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = vct.h; path = 3rdparty/sndlib/vct.h; sourceTree = SOURCE_ROOT; };
+		6877A2A0813F4E64B044840D /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/inc/Util.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Util.h; path = src/inc/Util.h; sourceTree = SOURCE_ROOT; };
+		7AD2230ADC1748059F008B3B /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/s7.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = s7.h; path = 3rdparty/sndlib/s7.h; sourceTree = SOURCE_ROOT; };
+		8223FECCF61C4BE19930B25E /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/inc/Vector.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Vector.h; path = src/inc/Vector.h; sourceTree = SOURCE_ROOT; };
+		875F59CF622F48039B3E85E4 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/AudioFileIO/AudioFile.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = AudioFile.h; path = src/AudioFileIO/AudioFile.h; sourceTree = SOURCE_ROOT; };
+		90C3F6BF60624FFD94918B8B /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/AudioFileIO/AudioFile.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = AudioFile.cpp; path = src/AudioFileIO/AudioFile.cpp; sourceTree = SOURCE_ROOT; };
+		935BAA42871A413F88F69945 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/CombFilter/CombFilterIf.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = CombFilterIf.cpp; path = src/CombFilter/CombFilterIf.cpp; sourceTree = SOURCE_ROOT; };
+		93D23EB8452749B78372C62C /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/MUSI6106Exec/Filter.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Filter.h; path = src/MUSI6106Exec/Filter.h; sourceTree = SOURCE_ROOT; };
+		9BDD163C399045A98551C03D /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/MUSI6106Exec/MUSI6106Exec.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = MUSI6106Exec.cpp; path = src/MUSI6106Exec/MUSI6106Exec.cpp; sourceTree = SOURCE_ROOT; };
+		9F34DCA7859B4CF0816D38EE /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/inc/RingBuffer.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = RingBuffer.h; path = src/inc/RingBuffer.h; sourceTree = SOURCE_ROOT; };
+		A4C047443AB341C59D2795BC /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/inc/Util.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Util.h; path = src/inc/Util.h; sourceTree = SOURCE_ROOT; };
+		A50E8378844747F2B2FE1E61 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/CombFilter/CombFilter.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = CombFilter.cpp; path = src/CombFilter/CombFilter.cpp; sourceTree = SOURCE_ROOT; };
+		A6ECF4820C5943E7BA9F7053 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/inc/RingBuffer.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = RingBuffer.h; path = src/inc/RingBuffer.h; sourceTree = SOURCE_ROOT; };
+		A92A8081E3BE417D87A124F5 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/audio.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = audio.c; path = 3rdparty/sndlib/audio.c; sourceTree = SOURCE_ROOT; };
+		B08A4F9A82F44DD69FDA5374 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/inc/Vector.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Vector.h; path = src/inc/Vector.h; sourceTree = SOURCE_ROOT; };
+		B381540B326B48999C05E06D /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/s7.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = s7.c; path = 3rdparty/sndlib/s7.c; sourceTree = SOURCE_ROOT; };
+		C2F18770B4144251B5CBE075 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/sndlib-strings.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = "sndlib-strings.h"; path = "3rdparty/sndlib/sndlib-strings.h"; sourceTree = SOURCE_ROOT; };
+		C6D2EBB19E4A46C095AF3E23 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/clm2xen.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = clm2xen.h; path = 3rdparty/sndlib/clm2xen.h; sourceTree = SOURCE_ROOT; };
+		D24BB99906D645EEB61ED107 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = 3rdparty/sndlib/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		D58BFCAC38764D9AADA319C6 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		D699E57FA111487FBE9FD25C /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/_sndlib.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = _sndlib.h; path = 3rdparty/sndlib/_sndlib.h; sourceTree = SOURCE_ROOT; };
+		D80F73A6A40F458184E6C0ED /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/inc/AudioFileIf.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = AudioFileIf.h; path = src/inc/AudioFileIf.h; sourceTree = SOURCE_ROOT; };
+		D9DDC9C8EB4F4737AFA02988 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/io.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = io.c; path = 3rdparty/sndlib/io.c; sourceTree = SOURCE_ROOT; };
+		E4BD8ED8FA0A41CBA1696A03 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/inc/AudioFileIf.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = AudioFileIf.h; path = src/inc/AudioFileIf.h; sourceTree = SOURCE_ROOT; };
+		E5DEF69D6BC34220900CE6A0 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/clm.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = clm.h; path = 3rdparty/sndlib/clm.h; sourceTree = SOURCE_ROOT; };
+		EE1EE821774748D9AE175B46 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/CombFilter/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = src/CombFilter/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		F8FEBE5C7FC34009960CA537 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/MUSI6106Exec/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = src/MUSI6106Exec/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		FBE262FF496A404AACD562A7 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/CombFilter/CombFilter.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = CombFilter.h; path = src/CombFilter/CombFilter.h; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		6D9CC52167CF4F0E82AA92B8 /* Frameworks */ = {
+		1BC97772337D415B9690B4CA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7DEE87CCD02B441BBADE9263 /* Frameworks */ = {
+		1D4A8393813740AF84874ACA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		81B35B97D4184706B4D930D7 /* Frameworks */ = {
+		B8CE48494E7144E7BC3C1DA1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F9D8A45F21434077B9EFE78F /* Frameworks */ = {
+		BD3E7AA786524872AAA5884A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -292,187 +296,189 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		276EFF4A9A3C4064829C072A /* Header Files */ = {
+		03E47E83E4BB410FA99F1187 /* Source Files */ = {
 			isa = PBXGroup;
 			children = (
-				C22D5F96F6F54B1296F2D2BD /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/AudioFileIO/AudioFile.h */,
-			);
-			name = "Header Files";
-			sourceTree = "<group>";
-		};
-		2E73CDDD12574FF48B29223A /* Source Files */ = {
-			isa = PBXGroup;
-			children = (
-				B0AC67CFC5FE4082B36E39AF /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/audio.c */,
-				E383A9E6011C46E28DB4F376 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/clm.c */,
-				813F04ADC3704F6B9A4DFDD8 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/clm2xen.c */,
-				122B8D42CA694B12BD4DBAC9 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/headers.c */,
-				7CB01892E1CE44278F51B7BF /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/io.c */,
-				43A4D159AAFB45D69CC245B6 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/s7.c */,
-				A98F96C398A348C1BB1714C0 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/sndlib2xen.c */,
-				66948DD2022148539A5E3A07 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/sound.c */,
-				3610F069D27844B2ABE6C83D /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/vct.c */,
-				72E672E5D33045FA990F824B /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/xen.c */,
+				A92A8081E3BE417D87A124F5 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/audio.c */,
+				1E9C97B0A1B34004B710924D /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/clm.c */,
+				2BD45B17F2E04BB6A757AB37 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/clm2xen.c */,
+				1032AC59F5384E0D95431088 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/headers.c */,
+				D9DDC9C8EB4F4737AFA02988 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/io.c */,
+				B381540B326B48999C05E06D /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/s7.c */,
+				2B697CDB062D44E1A0BBF20A /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/sndlib2xen.c */,
+				32B05EADC31F4D4FA1E345AA /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/sound.c */,
+				071EA70B8DD0487DB469D542 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/vct.c */,
+				62E2BC434BC84A119F6B38A2 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/xen.c */,
 			);
 			name = "Source Files";
 			sourceTree = "<group>";
 		};
-		35156BC75AA241EF9FF24E0B /* Header Files */ = {
+		168C7C66301342A1A9B5C447 /* CombFilter */ = {
 			isa = PBXGroup;
 			children = (
-				407BF8DB7B2D4E3699C8E81D /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/inc/AudioFileIf.h */,
-				CB1518DC30DB442CBDED0D4B /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/inc/CombFilterIf.h */,
-				34C94DCE288C4ACE9BAB381A /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/inc/RingBuffer.h */,
-				B3635F74648649EFA15BA3F2 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/inc/Util.h */,
-				9D6030841DE1490D9A7C66F1 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/inc/Vector.h */,
-			);
-			name = "Header Files";
-			sourceTree = "<group>";
-		};
-		44B5A464F1224E7BAF1F3363 /* Header Files */ = {
-			isa = PBXGroup;
-			children = (
-				A093C162930241C494D85B43 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/CombFilter/CombFilter.h */,
-				8B969FEC0D214AFEBF64CA48 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/CombFilter/RingBuffer.h */,
-				CE9F0DC9BB0D489A9ABEAA19 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/inc/AudioFileIf.h */,
-				F1FB1FCE88FC401E8F974EF4 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/inc/CombFilterIf.h */,
-				208BBC7DB5354B8BB629BCFA /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/inc/RingBuffer.h */,
-				45C9266E79BF412AA6029C2B /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/inc/Util.h */,
-				2CFB393E6B1646689F1CE749 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/inc/Vector.h */,
-			);
-			name = "Header Files";
-			sourceTree = "<group>";
-		};
-		65C38AB5466A42D59C517160 /* Source Files */ = {
-			isa = PBXGroup;
-			children = (
-				207EB0B1A8BF48FD9A7C9A3F /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/CombFilter/CombFilter.cpp */,
-				7A5AFACF74F34868946CC4BE /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/CombFilter/CombFilterIf.cpp */,
-			);
-			name = "Source Files";
-			sourceTree = "<group>";
-		};
-		67E97B6CCDB84230AC82D410 /* MUSI6106Exec */ = {
-			isa = PBXGroup;
-			children = (
-				6D154F5F33584CD8AD5489D9 /* Source Files */,
-				35156BC75AA241EF9FF24E0B /* Header Files */,
-				EAC06457632F4D3996A0BC62 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/MUSI6106Exec/CMakeLists.txt */,
-			);
-			name = MUSI6106Exec;
-			sourceTree = "<group>";
-		};
-		691AC4EDA4CF421BA7B2ABE0 = {
-			isa = PBXGroup;
-			children = (
-				75760F323A9448729A50D573 /* ALL_BUILD */,
-				67E97B6CCDB84230AC82D410 /* MUSI6106Exec */,
-				FE8CD25A71884C4EB04BD492 /* AudioFileIO */,
-				8DCB6A359AF5429C8F2A9325 /* sndlib */,
-				992215444B164DC0B657E113 /* CombFilter */,
-				B1E75A7A582C4E05997AC6EE /* Products */,
-				F144D21DBD9F43B4BD19E537 /* Frameworks */,
-			);
-			sourceTree = "<group>";
-		};
-		6D154F5F33584CD8AD5489D9 /* Source Files */ = {
-			isa = PBXGroup;
-			children = (
-				F243222C7C3D4E9881ED7675 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/MUSI6106Exec/MUSI6106Exec.cpp */,
-			);
-			name = "Source Files";
-			sourceTree = "<group>";
-		};
-		70C6B560EFD441A58CCC5594 /* CMake Rules */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "CMake Rules";
-			sourceTree = "<group>";
-		};
-		75760F323A9448729A50D573 /* ALL_BUILD */ = {
-			isa = PBXGroup;
-			children = (
-				70C6B560EFD441A58CCC5594 /* CMake Rules */,
-				12F0F5D1A3FF4E50A9122CF6 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/CMakeLists.txt */,
-			);
-			name = ALL_BUILD;
-			sourceTree = "<group>";
-		};
-		8DCB6A359AF5429C8F2A9325 /* sndlib */ = {
-			isa = PBXGroup;
-			children = (
-				2E73CDDD12574FF48B29223A /* Source Files */,
-				D84D29C1A1AE48C4AD27135C /* Header Files */,
-				2AD143983E9D471C82DB288E /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/CMakeLists.txt */,
-			);
-			name = sndlib;
-			sourceTree = "<group>";
-		};
-		992215444B164DC0B657E113 /* CombFilter */ = {
-			isa = PBXGroup;
-			children = (
-				65C38AB5466A42D59C517160 /* Source Files */,
-				44B5A464F1224E7BAF1F3363 /* Header Files */,
-				90E9A53E4FC944629C6EA8AC /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/CombFilter/CMakeLists.txt */,
+				FBC54B8D7DD44C6A87DDFEEC /* Source Files */,
+				4390AAF7AEA44897A40F68CD /* Header Files */,
+				EE1EE821774748D9AE175B46 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/CombFilter/CMakeLists.txt */,
 			);
 			name = CombFilter;
 			sourceTree = "<group>";
 		};
-		B1E75A7A582C4E05997AC6EE /* Products */ = {
+		1F674E0FB6A2407399A54F0D /* Header Files */ = {
 			isa = PBXGroup;
 			children = (
-				D52EFD41E8B44DE488D642CD /* AudioFileIO */,
-				B523B6BE68E943DFAAEDE4FC /* CombFilter */,
-				12D5B34590034A548AF58E24 /* MUSI6106Exec */,
-				F87789D274754B8DBFA17B00 /* sndlib */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		D84D29C1A1AE48C4AD27135C /* Header Files */ = {
-			isa = PBXGroup;
-			children = (
-				361BC3B10E744B0AAF54AB10 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/_sndlib.h */,
-				D03B10830B714438983A7535 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/clm-strings.h */,
-				3777913D24A446029BDAED9E /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/clm.h */,
-				CF81AF42574F4FB5866F6315 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/clm2xen.h */,
-				C8A0E8A48B544A929C84E4B1 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/mus-config.h */,
-				AF6F243E6EDF466EB4FCE7BF /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/s7.h */,
-				3B3DD4C81E1A4AD09533E288 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/sndlib-strings.h */,
-				099D991261DA4E218D3AB02C /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/sndlib.h */,
-				FFC179B977544D3CBA8DEAB0 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/sndlib2xen.h */,
-				CD6CF837CBF347BEB071E2FB /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/unix-config.h */,
-				8B83766BC1844FCDAFD2D3F6 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/vct.h */,
-				B7F6BEC1D9A54355A1B7BD19 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/xen.h */,
+				93D23EB8452749B78372C62C /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/MUSI6106Exec/Filter.h */,
+				D80F73A6A40F458184E6C0ED /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/inc/AudioFileIf.h */,
+				5D800C8EDF234FCA9D30AD7F /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/inc/CombFilterIf.h */,
+				A6ECF4820C5943E7BA9F7053 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/inc/RingBuffer.h */,
+				6877A2A0813F4E64B044840D /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/inc/Util.h */,
+				8223FECCF61C4BE19930B25E /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/inc/Vector.h */,
 			);
 			name = "Header Files";
 			sourceTree = "<group>";
 		};
-		F144D21DBD9F43B4BD19E537 /* Frameworks */ = {
+		3CC4A50526314A90937BA853 /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				875F59CF622F48039B3E85E4 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/AudioFileIO/AudioFile.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		4390AAF7AEA44897A40F68CD /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				FBE262FF496A404AACD562A7 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/CombFilter/CombFilter.h */,
+				413B6290255F4B92AA1047E3 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/CombFilter/RingBuffer.h */,
+				E4BD8ED8FA0A41CBA1696A03 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/inc/AudioFileIf.h */,
+				24558CF993824678BC5703D6 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/inc/CombFilterIf.h */,
+				9F34DCA7859B4CF0816D38EE /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/inc/RingBuffer.h */,
+				A4C047443AB341C59D2795BC /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/inc/Util.h */,
+				B08A4F9A82F44DD69FDA5374 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/inc/Vector.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		5F02A8AF01B5491F9472B412 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				90C3F6BF60624FFD94918B8B /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/AudioFileIO/AudioFile.cpp */,
+				40CC20F35D464DF88EC51A8B /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/AudioFileIO/AudioFileIf.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		6206A0518DF84E4DBCAC1547 /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				D699E57FA111487FBE9FD25C /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/_sndlib.h */,
+				0064FB6CEC7347C183A4EA08 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/clm-strings.h */,
+				E5DEF69D6BC34220900CE6A0 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/clm.h */,
+				C6D2EBB19E4A46C095AF3E23 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/clm2xen.h */,
+				59D5AA99983E4842B08E19D1 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/mus-config.h */,
+				7AD2230ADC1748059F008B3B /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/s7.h */,
+				C2F18770B4144251B5CBE075 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/sndlib-strings.h */,
+				470AF1B7703F4B8F87718E06 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/sndlib.h */,
+				55A47AEC627D4E72947EB92C /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/sndlib2xen.h */,
+				4C316BC6E7A2429BAED012C0 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/unix-config.h */,
+				63EED431282142308450E27B /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/vct.h */,
+				0A15688BA4724110B7B6E9A6 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/xen.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		7B461792032A4A369D4B63F6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		FD9F81C09FB543DC8E9D9822 /* Source Files */ = {
+		80766158C33946A1BB0F00BD /* MUSI6106Exec */ = {
 			isa = PBXGroup;
 			children = (
-				9DF65FDFCBC1478083E5F24E /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/AudioFileIO/AudioFile.cpp */,
-				19D4157488264CF1B704AC7C /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/AudioFileIO/AudioFileIf.cpp */,
+				930B890468C0450EB3C3738E /* Source Files */,
+				1F674E0FB6A2407399A54F0D /* Header Files */,
+				F8FEBE5C7FC34009960CA537 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/MUSI6106Exec/CMakeLists.txt */,
+			);
+			name = MUSI6106Exec;
+			sourceTree = "<group>";
+		};
+		930B890468C0450EB3C3738E /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				63C1DE89F364477BB0B0C6AF /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/MUSI6106Exec/Filter.cpp */,
+				9BDD163C399045A98551C03D /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/MUSI6106Exec/MUSI6106Exec.cpp */,
 			);
 			name = "Source Files";
 			sourceTree = "<group>";
 		};
-		FE8CD25A71884C4EB04BD492 /* AudioFileIO */ = {
+		9BF9562CBB6A4B59BFAF673D = {
 			isa = PBXGroup;
 			children = (
-				FD9F81C09FB543DC8E9D9822 /* Source Files */,
-				276EFF4A9A3C4064829C072A /* Header Files */,
-				9BBD51E8F85647599A2965C4 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/AudioFileIO/CMakeLists.txt */,
+				F70BB2F515E94E26AE394609 /* ALL_BUILD */,
+				80766158C33946A1BB0F00BD /* MUSI6106Exec */,
+				C35419E4A1B7474DA6B73237 /* AudioFileIO */,
+				D4FD771395F443AE96D47256 /* sndlib */,
+				168C7C66301342A1A9B5C447 /* CombFilter */,
+				AD15C11948BC45DD93B2D948 /* Products */,
+				7B461792032A4A369D4B63F6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AD15C11948BC45DD93B2D948 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				214BD70F48D94F8588638C1C /* AudioFileIO */,
+				08989C04A1A341528BFB394A /* CombFilter */,
+				4E8267D152224E579DC64514 /* MUSI6106Exec */,
+				38EB6A0F43CE4F418420F2CD /* sndlib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C35419E4A1B7474DA6B73237 /* AudioFileIO */ = {
+			isa = PBXGroup;
+			children = (
+				5F02A8AF01B5491F9472B412 /* Source Files */,
+				3CC4A50526314A90937BA853 /* Header Files */,
+				062615FA8AA4488D94068550 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/AudioFileIO/CMakeLists.txt */,
 			);
 			name = AudioFileIO;
+			sourceTree = "<group>";
+		};
+		D4FD771395F443AE96D47256 /* sndlib */ = {
+			isa = PBXGroup;
+			children = (
+				03E47E83E4BB410FA99F1187 /* Source Files */,
+				6206A0518DF84E4DBCAC1547 /* Header Files */,
+				D24BB99906D645EEB61ED107 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/CMakeLists.txt */,
+			);
+			name = sndlib;
+			sourceTree = "<group>";
+		};
+		D9E54EB6FC6749DD93ACB2DB /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		F70BB2F515E94E26AE394609 /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				D9E54EB6FC6749DD93ACB2DB /* CMake Rules */,
+				D58BFCAC38764D9AADA319C6 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		FBC54B8D7DD44C6A87DDFEEC /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				A50E8378844747F2B2FE1E61 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/CombFilter/CombFilter.cpp */,
+				935BAA42871A413F88F69945 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/CombFilter/CombFilterIf.cpp */,
+			);
+			name = "Source Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -480,74 +486,74 @@
 /* Begin PBXNativeTarget section */
 		36D7B08CD4D343959AA1F1FC /* sndlib */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C5C2B3F4980A402CA569823A /* Build configuration list for PBXNativeTarget "sndlib" */;
+			buildConfigurationList = 26DD4E5381B942D68F7D12BF /* Build configuration list for PBXNativeTarget "sndlib" */;
 			buildPhases = (
-				C04A57AC889341B6BD498E81 /* Sources */,
-				7DEE87CCD02B441BBADE9263 /* Frameworks */,
+				7D066B27B1BC4B4195A0A94B /* Sources */,
+				BD3E7AA786524872AAA5884A /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				B2C5F7DBC9324E25BBF5FB98 /* PBXTargetDependency */,
+				C4332D0630564C5E83E4FE45 /* PBXTargetDependency */,
 			);
 			name = sndlib;
 			productName = sndlib;
-			productReference = F87789D274754B8DBFA17B00 /* sndlib */;
+			productReference = 38EB6A0F43CE4F418420F2CD /* sndlib */;
 			productType = "com.apple.product-type.library.static";
 		};
 		4E4C051669C94FE5A9871415 /* CombFilter */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DB16B6A2B4F44F5E80F53C2F /* Build configuration list for PBXNativeTarget "CombFilter" */;
+			buildConfigurationList = BDEA2CFF3E0946C9BD77D582 /* Build configuration list for PBXNativeTarget "CombFilter" */;
 			buildPhases = (
-				0E62D0C7C3AE48878530F2C1 /* Sources */,
-				F9D8A45F21434077B9EFE78F /* Frameworks */,
+				BBDCCCD65030488A87277024 /* Sources */,
+				1BC97772337D415B9690B4CA /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				30C4343996F04FB0B5079E23 /* PBXTargetDependency */,
+				F94DC531CCBB44DEBEAB2093 /* PBXTargetDependency */,
 			);
 			name = CombFilter;
 			productName = CombFilter;
-			productReference = B523B6BE68E943DFAAEDE4FC /* CombFilter */;
+			productReference = 08989C04A1A341528BFB394A /* CombFilter */;
 			productType = "com.apple.product-type.library.static";
 		};
 		5F768F2CD445461DB836A699 /* MUSI6106Exec */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5EBC6CC2C7B74174B81E1184 /* Build configuration list for PBXNativeTarget "MUSI6106Exec" */;
+			buildConfigurationList = AE1235B0AC7D43E79C3B51CE /* Build configuration list for PBXNativeTarget "MUSI6106Exec" */;
 			buildPhases = (
-				050A4E065BF14026A71F7B33 /* Sources */,
-				81B35B97D4184706B4D930D7 /* Frameworks */,
+				23F34703FC854FF5B9F21C48 /* Sources */,
+				B8CE48494E7144E7BC3C1DA1 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				837916B384584AE686D0FECF /* PBXTargetDependency */,
-				85506984A7914AFFB0CEEFD9 /* PBXTargetDependency */,
-				75479CE11D4E4FE585C028DE /* PBXTargetDependency */,
-				7211D08CB62F4389A3A7518F /* PBXTargetDependency */,
+				11427A829BD8452B89033276 /* PBXTargetDependency */,
+				9C29B8DD15D947A9A85D4A25 /* PBXTargetDependency */,
+				8A0AEF6F3981472CA0A2FA58 /* PBXTargetDependency */,
+				6E1CD47347594EF4B4718D74 /* PBXTargetDependency */,
 			);
 			name = MUSI6106Exec;
 			productName = MUSI6106Exec;
-			productReference = 12D5B34590034A548AF58E24 /* MUSI6106Exec */;
+			productReference = 4E8267D152224E579DC64514 /* MUSI6106Exec */;
 			productType = "com.apple.product-type.tool";
 		};
 		8CEB25A5EE304A86970AD704 /* AudioFileIO */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DCB8A9DF14974443BCFD0365 /* Build configuration list for PBXNativeTarget "AudioFileIO" */;
+			buildConfigurationList = 99DD4AB47074448DAFC4C6E8 /* Build configuration list for PBXNativeTarget "AudioFileIO" */;
 			buildPhases = (
-				E1A028126F244DB3BF2D764D /* Sources */,
-				6D9CC52167CF4F0E82AA92B8 /* Frameworks */,
+				737B12ACE1E943409010FAFD /* Sources */,
+				1D4A8393813740AF84874ACA /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				97E2917551174862B3DBC7D4 /* PBXTargetDependency */,
-				89467E45FE2745F49358F461 /* PBXTargetDependency */,
+				26BB68F8487D480A8ADC8500 /* PBXTargetDependency */,
+				ABEE563DAEB7474EB1C8ADA0 /* PBXTargetDependency */,
 			);
 			name = AudioFileIO;
 			productName = AudioFileIO;
-			productReference = D52EFD41E8B44DE488D642CD /* AudioFileIO */;
+			productReference = 214BD70F48D94F8588638C1C /* AudioFileIO */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -559,18 +565,18 @@
 				BuildIndependentTargetsInParallel = YES;
 				LastUpgradeCheck = 1240;
 			};
-			buildConfigurationList = DFACCDF785714ACC8914BA4B /* Build configuration list for PBXProject "MUSI6106" */;
+			buildConfigurationList = 78AAD287B83D4361820C3A4D /* Build configuration list for PBXProject "MUSI6106" */;
 			buildSettings = {
 			};
 			buildStyles = (
-				7E6A7D41589B4404A557B637 /* Debug */,
-				EFCFBCC0A1484D70AB4D33BF /* Release */,
-				5E517578CE2D430CB8CD6329 /* MinSizeRel */,
-				33E1C730E5A14AF39A2D3992 /* RelWithDebInfo */,
+				F61946107B804BFB86ECC9F3 /* Debug */,
+				E23B3402E5EA4976BC8438BD /* Release */,
+				1555B53ABDF74DF69DCAB5F4 /* MinSizeRel */,
+				E0AAE556064943D584E0EB43 /* RelWithDebInfo */,
 			);
 			compatibilityVersion = "Xcode 3.2";
 			hasScannedForEncodings = 0;
-			mainGroup = 691AC4EDA4CF421BA7B2ABE0;
+			mainGroup = 9BF9562CBB6A4B59BFAF673D;
 			projectDirPath = .;
 			projectRoot = "";
 			targets = (
@@ -684,363 +690,122 @@ exit 0";
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		050A4E065BF14026A71F7B33 /* Sources */ = {
+		23F34703FC854FF5B9F21C48 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D3C5430ECBA54811B9C548B6 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/MUSI6106Exec/MUSI6106Exec.cpp */,
+				0ADBA53BCB194C96937C5389 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/MUSI6106Exec/Filter.cpp */,
+				E7B63742256A477187E4B5DD /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/MUSI6106Exec/MUSI6106Exec.cpp */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0E62D0C7C3AE48878530F2C1 /* Sources */ = {
+		737B12ACE1E943409010FAFD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1ADE2C67E6A47D0BA2579D0 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/CombFilter/CombFilter.cpp */,
-				AFE5BA1419B8416EA99234EE /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/CombFilter/CombFilterIf.cpp */,
+				32F72260B99F4D369B4BF1D1 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/AudioFileIO/AudioFile.cpp */,
+				E781CE3195A142D8B17FA113 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/AudioFileIO/AudioFileIf.cpp */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C04A57AC889341B6BD498E81 /* Sources */ = {
+		7D066B27B1BC4B4195A0A94B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A023F8D4DFD4D52AF3CF330 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/audio.c */,
-				73467B011DC940CEAADD6C01 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/clm.c */,
-				85543B5F99554BCA997033DC /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/clm2xen.c */,
-				736F83812BA2449C96C9E244 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/headers.c */,
-				634FB8F14343405F99881FA7 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/io.c */,
-				C3C33C90661C4C89AAB5B6B0 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/s7.c */,
-				0019AE055D3C45F0A95FC12C /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/sndlib2xen.c */,
-				31D58F0D008C4B1EB88E294F /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/sound.c */,
-				22EF1D90F6524A9BBB9D88AB /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/vct.c */,
-				6BF334C5DD5C4623AE15F135 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/xen.c */,
+				8CAA461C929042E086CCAE55 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/audio.c */,
+				EAA71D2EB76542CEB289CAE7 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/clm.c */,
+				A73AABFBD0644F4CBC289932 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/clm2xen.c */,
+				9BE2FAEE3D344766A0F5E398 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/headers.c */,
+				3D0F7469685646178E611D53 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/io.c */,
+				BFED76C6A4484D0FB74E9594 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/s7.c */,
+				06029E28A1144C1AB35935D3 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/sndlib2xen.c */,
+				5E1AB7FC3ED04B0A893A656B /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/sound.c */,
+				21657B19E1DF45388A22FCC9 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/vct.c */,
+				ADBA13B0CEB241C98ABC9FBA /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib/xen.c */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E1A028126F244DB3BF2D764D /* Sources */ = {
+		BBDCCCD65030488A87277024 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				870B730E7D3840919B61BA1D /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/AudioFileIO/AudioFile.cpp */,
-				DE64AC52EF334728B78C6C7B /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/AudioFileIO/AudioFileIf.cpp */,
+				FE14727D19F646CB98F053AC /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/CombFilter/CombFilter.cpp */,
+				CBF27A2B1F0B44AC8D73D433 /* /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/CombFilter/CombFilterIf.cpp */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		099B9086A9234A71968204D3 /* PBXTargetDependency */ = {
+		08B1446F00B34894A367B7C8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 36D7B08CD4D343959AA1F1FC /* sndlib */;
-			targetProxy = C7A584E8B94747FCAA01AE97 /* PBXContainerItemProxy */;
+			targetProxy = E51B74321A5A41B596191EFF /* PBXContainerItemProxy */;
 		};
-		21D919AD0D3F4EECAE08AFB6 /* PBXTargetDependency */ = {
+		11427A829BD8452B89033276 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 9F396627D3E34566BD5E97C4 /* ZERO_CHECK */;
-			targetProxy = 73DC041046794EB985CD80B6 /* PBXContainerItemProxy */;
+			target = 8CEB25A5EE304A86970AD704 /* AudioFileIO */;
+			targetProxy = 71DDFE0C8BF74079904A3028 /* PBXContainerItemProxy */;
 		};
-		23693392DCFC48CFB2F82394 /* PBXTargetDependency */ = {
+		26BB68F8487D480A8ADC8500 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 36D7B08CD4D343959AA1F1FC /* sndlib */;
+			targetProxy = 5D2CA22AF95A4934B6957A5B /* PBXContainerItemProxy */;
+		};
+		275710F60FB147CE87EA14FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8CEB25A5EE304A86970AD704 /* AudioFileIO */;
+			targetProxy = 513A7FB2D3164D8792EB7A6E /* PBXContainerItemProxy */;
+		};
+		6B8EA68BDCB246F4B5F2FB5D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 5F768F2CD445461DB836A699 /* MUSI6106Exec */;
-			targetProxy = D2D89DBC5DBA411E859AB628 /* PBXContainerItemProxy */;
+			targetProxy = D7E37391A27B411D8E82BEE0 /* PBXContainerItemProxy */;
 		};
-		30C4343996F04FB0B5079E23 /* PBXTargetDependency */ = {
+		6E1CD47347594EF4B4718D74 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 9F396627D3E34566BD5E97C4 /* ZERO_CHECK */;
-			targetProxy = 346F1970F5E24A738304626D /* PBXContainerItemProxy */;
+			targetProxy = 546D0E380AAB462E8CD8B120 /* PBXContainerItemProxy */;
 		};
-		36EF759AD67443F1AC2BE4EA /* PBXTargetDependency */ = {
+		8A0AEF6F3981472CA0A2FA58 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 4E4C051669C94FE5A9871415 /* CombFilter */;
-			targetProxy = 9AD870B51DAF4DEF940B2DD7 /* PBXContainerItemProxy */;
+			targetProxy = B6EBEF2221984EEA82CE72FA /* PBXContainerItemProxy */;
 		};
-		6B22CEE0AE6B4A7EA1810357 /* PBXTargetDependency */ = {
+		9C29B8DD15D947A9A85D4A25 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 8CEB25A5EE304A86970AD704 /* AudioFileIO */;
-			targetProxy = 484256C91D2642CC9505C5C0 /* PBXContainerItemProxy */;
+			target = 36D7B08CD4D343959AA1F1FC /* sndlib */;
+			targetProxy = DE4D2B91C2F9449D9616C6A8 /* PBXContainerItemProxy */;
 		};
-		7211D08CB62F4389A3A7518F /* PBXTargetDependency */ = {
+		ABEE563DAEB7474EB1C8ADA0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 9F396627D3E34566BD5E97C4 /* ZERO_CHECK */;
-			targetProxy = AE82DD7A931841CFBB5C0C66 /* PBXContainerItemProxy */;
+			targetProxy = 7ECFBAA1E245410693612AB1 /* PBXContainerItemProxy */;
 		};
-		75479CE11D4E4FE585C028DE /* PBXTargetDependency */ = {
+		C4332D0630564C5E83E4FE45 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9F396627D3E34566BD5E97C4 /* ZERO_CHECK */;
+			targetProxy = 969E266C3B0C444696919FA0 /* PBXContainerItemProxy */;
+		};
+		D68DBB21508E43069A3F4ED6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9F396627D3E34566BD5E97C4 /* ZERO_CHECK */;
+			targetProxy = 29E8B2A6DA8E47B1A2C2A172 /* PBXContainerItemProxy */;
+		};
+		DF9BEE35B8F74BED99B322CE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 4E4C051669C94FE5A9871415 /* CombFilter */;
-			targetProxy = 1F68CF9993D24AE1AF4F7973 /* PBXContainerItemProxy */;
+			targetProxy = E9180BE63EC24BE18012CB16 /* PBXContainerItemProxy */;
 		};
-		837916B384584AE686D0FECF /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 8CEB25A5EE304A86970AD704 /* AudioFileIO */;
-			targetProxy = 37EE7559252A476F86C55B66 /* PBXContainerItemProxy */;
-		};
-		85506984A7914AFFB0CEEFD9 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 36D7B08CD4D343959AA1F1FC /* sndlib */;
-			targetProxy = 012D791BB8884909B02E26AB /* PBXContainerItemProxy */;
-		};
-		89467E45FE2745F49358F461 /* PBXTargetDependency */ = {
+		F94DC531CCBB44DEBEAB2093 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 9F396627D3E34566BD5E97C4 /* ZERO_CHECK */;
-			targetProxy = 89F33578504B4050BBDDF4B1 /* PBXContainerItemProxy */;
-		};
-		97E2917551174862B3DBC7D4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 36D7B08CD4D343959AA1F1FC /* sndlib */;
-			targetProxy = 3720B0714ACD411FAE32C3D9 /* PBXContainerItemProxy */;
-		};
-		B2C5F7DBC9324E25BBF5FB98 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 9F396627D3E34566BD5E97C4 /* ZERO_CHECK */;
-			targetProxy = 77FB0C0303E24F2AB5379C37 /* PBXContainerItemProxy */;
+			targetProxy = E3490B391C2A48C88A21D488 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0169273789A342EA8C7587B0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = "/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/lib/Release";
-				EXECUTABLE_PREFIX = lib;
-				EXECUTABLE_SUFFIX = .a;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 3;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = ("/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/inc","/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/inc","$(inherited)");
-				INSTALL_PATH = "";
-				LIBRARY_STYLE = STATIC;
-				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG ";
-				OTHER_LIBTOOLFLAGS = ("");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = CombFilter;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/CombFilter";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = Release;
-		};
-		10983A4817FB428495569D59 /* MinSizeRel */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = ("","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ALL_BUILD;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = MinSizeRel;
-		};
-		189D66B00C484418802193CD /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = "/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/bin/Release";
-				EXECUTABLE_PREFIX = "";
-				EXECUTABLE_SUFFIX = "";
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 3;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = ("/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/inc","/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/inc","$(inherited)");
-				INSTALL_PATH = "";
-				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG ";
-				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/lib/Release/libAudioFileIO.a","/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/lib/Release/libCombFilter.a","/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/lib/Release/libsndlib.a","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = MUSI6106Exec;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/MUSI6106Exec";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = Release;
-		};
-		199C4C3D916C4F79B42B904E /* MinSizeRel */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk;
-				SYMROOT = "/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/build";
-			};
-			name = MinSizeRel;
-		};
-		1AEB563101594039BD096E09 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk;
-				SYMROOT = "/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/build";
-			};
-			name = Debug;
-		};
-		1C41EB4DC745474996B39834 /* RelWithDebInfo */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = ("","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ZERO_CHECK;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = RelWithDebInfo;
-		};
-		2085ECF1656649B5ACEACF3A /* RelWithDebInfo */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = "/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/lib/relwithdebinfo";
-				EXECUTABLE_PREFIX = lib;
-				EXECUTABLE_SUFFIX = .a;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 2;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = ("/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/inc","/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/inc","/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib","$(inherited)");
-				INSTALL_PATH = "";
-				LIBRARY_STYLE = STATIC;
-				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG ";
-				OTHER_LIBTOOLFLAGS = ("");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = AudioFileIO;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/AudioFileIO";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = RelWithDebInfo;
-		};
-		2B94CABB59174C1FA05E5BAA /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk;
-				SYMROOT = "/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/build";
-			};
-			name = Release;
-		};
-		338CAEE9194246CABFC9ADF8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = "/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/lib/Debug";
-				EXECUTABLE_PREFIX = lib;
-				EXECUTABLE_SUFFIX = .a;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = ("/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/inc","/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/inc","/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib","$(inherited)");
-				INSTALL_PATH = "";
-				LIBRARY_STYLE = STATIC;
-				OTHER_CPLUSPLUSFLAGS = "   ";
-				OTHER_LIBTOOLFLAGS = ("");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = AudioFileIO;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/AudioFileIO";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = Debug;
-		};
-		554E5FBE1D6F4F908AE2C75A /* MinSizeRel */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = ("","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ZERO_CHECK;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = MinSizeRel;
-		};
-		6105B35F14C24694B974ADA1 /* RelWithDebInfo */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = ("","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ALL_BUILD;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = RelWithDebInfo;
-		};
-		6DC9BBB960C242399468DBF3 /* MinSizeRel */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = "/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/lib/MinSizeRel";
-				EXECUTABLE_PREFIX = lib;
-				EXECUTABLE_SUFFIX = .a;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = s;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = ("/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/inc","/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/inc","$(inherited)");
-				INSTALL_PATH = "";
-				LIBRARY_STYLE = STATIC;
-				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG ";
-				OTHER_LIBTOOLFLAGS = ("");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = CombFilter;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/CombFilter";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = MinSizeRel;
-		};
-		751F44FD07BA4875A9113A63 /* Debug */ = {
+		0694A1CF843D47B5A955DD5B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -1066,33 +831,7 @@ exit 0";
 			};
 			name = Debug;
 		};
-		7A2C53E5DF2E4A4D93EC9DE0 /* MinSizeRel */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = "/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/lib/MinSizeRel";
-				EXECUTABLE_PREFIX = lib;
-				EXECUTABLE_SUFFIX = .a;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = s;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = ("/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/inc","/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/inc","/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib","$(inherited)");
-				INSTALL_PATH = "";
-				LIBRARY_STYLE = STATIC;
-				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG ";
-				OTHER_LIBTOOLFLAGS = ("");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = AudioFileIO;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/AudioFileIO";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = MinSizeRel;
-		};
-		7C27F22B1C674783B01FC07C /* Release */ = {
+		0CB4272601574B60A34190D5 /* MinSizeRel */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -1110,9 +849,46 @@ exit 0";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = ("$(inherited)");
 			};
+			name = MinSizeRel;
+		};
+		1CE6516587D944979BEB0DD0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk;
+				SYMROOT = "/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/build";
+			};
 			name = Release;
 		};
-		85DDC0CD8FBD46818947CC63 /* Release */ = {
+		21B6FA9738154D24BB4A5C2B /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/lib/MinSizeRel";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/inc","/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/inc","$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = CombFilter;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/CombFilter";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		25AB4D477753440395866885 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -1132,32 +908,64 @@ exit 0";
 			};
 			name = Release;
 		};
-		86BA01967D694FCC8E2D4113 /* Debug */ = {
+		2F004D0BAC5642B880316AE7 /* MinSizeRel */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = "/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/bin/Debug";
-				EXECUTABLE_PREFIX = "";
-				EXECUTABLE_SUFFIX = "";
+				CONFIGURATION_BUILD_DIR = "/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/lib/MinSizeRel";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib","$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = ("    -DNDEBUG -w ","$(inherited)");
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = sndlib;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/AudioFileIO/sndlib";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		38794C5791A549B593C62E51 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = ("/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/inc","/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/inc","$(inherited)");
 				INSTALL_PATH = "";
-				OTHER_CPLUSPLUSFLAGS = "   ";
-				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/lib/Debug/libAudioFileIO.a","/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/lib/Debug/libCombFilter.a","/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/lib/Debug/libsndlib.a","$(inherited)");
+				OTHER_LDFLAGS = ("","$(inherited)");
 				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = MUSI6106Exec;
+				PRODUCT_NAME = ZERO_CHECK;
 				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/MUSI6106Exec";
+				SYMROOT = "/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = ("$(inherited)");
 			};
-			name = Debug;
+			name = RelWithDebInfo;
 		};
-		8CDBEC369F39411FA79D9630 /* RelWithDebInfo */ = {
+		53B9CDBF9F5C4F3DBDF0AA5D /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk;
+				SYMROOT = "/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/build";
+			};
+			name = MinSizeRel;
+		};
+		55263A8F11C343509A7B1047 /* RelWithDebInfo */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -1183,7 +991,267 @@ exit 0";
 			};
 			name = RelWithDebInfo;
 		};
-		8CDEF94ACCA449A59D4732F1 /* Debug */ = {
+		55BADE61F3A04275A37C88DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		593C4CF885C34602AD669041 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/bin/MinSizeRel";
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/inc","/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/inc","$(inherited)");
+				INSTALL_PATH = "";
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/lib/MinSizeRel/libAudioFileIO.a","/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/lib/MinSizeRel/libCombFilter.a","/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/lib/MinSizeRel/libsndlib.a","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = MUSI6106Exec;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/MUSI6106Exec";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		6AB70E2A62A542C1B34208D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/lib/Release";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/inc","/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/inc","/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib","$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = AudioFileIO;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/AudioFileIO";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		77D1C59D2EF64529961AD491 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		7B7251246D6F449488E06818 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/lib/MinSizeRel";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/inc","/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/inc","/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib","$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = AudioFileIO;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/AudioFileIO";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		7EBAD6AFB975486792F4578A /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		8139C284CC3443D1A5967E97 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/lib/relwithdebinfo";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/inc","/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/inc","/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib","$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = AudioFileIO;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/AudioFileIO";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		868E0F965C654757855ED588 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/lib/Release";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib","$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = ("    -DNDEBUG -w ","$(inherited)");
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = sndlib;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/AudioFileIO/sndlib";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		B177FDC2F56943A1A4BFF746 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/bin/relwithdebinfo";
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/inc","/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/inc","$(inherited)");
+				INSTALL_PATH = "";
+				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/lib/relwithdebinfo/libAudioFileIO.a","/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/lib/relwithdebinfo/libCombFilter.a","/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/lib/relwithdebinfo/libsndlib.a","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = MUSI6106Exec;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/MUSI6106Exec";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		B7B46C030E1A4FBB9BF06E44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		BB41F6DA4A8B414BB42418C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/lib/Debug";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/inc","/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/inc","/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib","$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "   ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = AudioFileIO;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/AudioFileIO";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		BC2E89DA0DEF4899BDF7B6EC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -1209,160 +1277,7 @@ exit 0";
 			};
 			name = Debug;
 		};
-		947025C8217949ECBDA8A479 /* RelWithDebInfo */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = "/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/bin/relwithdebinfo";
-				EXECUTABLE_PREFIX = "";
-				EXECUTABLE_SUFFIX = "";
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 2;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = ("/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/inc","/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/inc","$(inherited)");
-				INSTALL_PATH = "";
-				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG ";
-				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/lib/relwithdebinfo/libAudioFileIO.a","/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/lib/relwithdebinfo/libCombFilter.a","/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/lib/relwithdebinfo/libsndlib.a","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = MUSI6106Exec;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/MUSI6106Exec";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = RelWithDebInfo;
-		};
-		B74D105DC35940B094323746 /* MinSizeRel */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = "/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/bin/MinSizeRel";
-				EXECUTABLE_PREFIX = "";
-				EXECUTABLE_SUFFIX = "";
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = s;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = ("/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/inc","/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/inc","$(inherited)");
-				INSTALL_PATH = "";
-				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG ";
-				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/lib/MinSizeRel/libAudioFileIO.a","/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/lib/MinSizeRel/libCombFilter.a","/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/lib/MinSizeRel/libsndlib.a","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = MUSI6106Exec;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/MUSI6106Exec";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = MinSizeRel;
-		};
-		B87320085E054B2197FB3CD7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = ("","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ZERO_CHECK;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = Debug;
-		};
-		BF7BADC4ADA446F0A6D1F246 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = ("","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ALL_BUILD;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = Debug;
-		};
-		C15DCDE0F8D6407B9ADAEF70 /* RelWithDebInfo */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk;
-				SYMROOT = "/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/build";
-			};
-			name = RelWithDebInfo;
-		};
-		CAC8C288496D423691C137F3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = "/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/lib/Release";
-				EXECUTABLE_PREFIX = lib;
-				EXECUTABLE_SUFFIX = .a;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 3;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = ("/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/inc","/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/inc","/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib","$(inherited)");
-				INSTALL_PATH = "";
-				LIBRARY_STYLE = STATIC;
-				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG ";
-				OTHER_LIBTOOLFLAGS = ("");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = AudioFileIO;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/AudioFileIO";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = Release;
-		};
-		D446F72B02F5401BBF211B01 /* MinSizeRel */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = "/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/lib/MinSizeRel";
-				EXECUTABLE_PREFIX = lib;
-				EXECUTABLE_SUFFIX = .a;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = s;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = ("/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib","$(inherited)");
-				INSTALL_PATH = "";
-				LIBRARY_STYLE = STATIC;
-				OTHER_CFLAGS = ("    -DNDEBUG -w ","$(inherited)");
-				OTHER_LIBTOOLFLAGS = ("");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = sndlib;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/AudioFileIO/sndlib";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = MinSizeRel;
-		};
-		DA90AA25CB904FA9B4F72084 /* RelWithDebInfo */ = {
+		C36E716AA1334A8AA7C05A85 /* RelWithDebInfo */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -1388,7 +1303,57 @@ exit 0";
 			};
 			name = RelWithDebInfo;
 		};
-		F1E51AED96D449158CED1E09 /* Release */ = {
+		CD3B316AEF194CCA990191EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/bin/Release";
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/inc","/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/inc","$(inherited)");
+				INSTALL_PATH = "";
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/lib/Release/libAudioFileIO.a","/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/lib/Release/libCombFilter.a","/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/lib/Release/libsndlib.a","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = MUSI6106Exec;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/MUSI6106Exec";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		D56F7BA752AB44E1AE021EAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/bin/Debug";
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/inc","/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/inc","$(inherited)");
+				INSTALL_PATH = "";
+				OTHER_CPLUSPLUSFLAGS = "   ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/lib/Debug/libAudioFileIO.a","/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/lib/Debug/libCombFilter.a","/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/lib/Debug/libsndlib.a","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = MUSI6106Exec;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/MUSI6106Exec";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		EA3F0AAA81894F9F8F07F425 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -1400,96 +1365,138 @@ exit 0";
 				GCC_OPTIMIZATION_LEVEL = 3;
 				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = ("/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/3rdparty/sndlib","$(inherited)");
+				HEADER_SEARCH_PATHS = ("/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/inc","/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/src/inc","$(inherited)");
 				INSTALL_PATH = "";
 				LIBRARY_STYLE = STATIC;
-				OTHER_CFLAGS = ("    -DNDEBUG -w ","$(inherited)");
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG ";
 				OTHER_LIBTOOLFLAGS = ("");
 				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = sndlib;
+				PRODUCT_NAME = CombFilter;
 				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/AudioFileIO/sndlib";
+				SYMROOT = "/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/CombFilter";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = ("$(inherited)");
 			};
 			name = Release;
 		};
+		EE3ED79725B3440B80CF4C96 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk;
+				SYMROOT = "/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/build";
+			};
+			name = RelWithDebInfo;
+		};
+		EE8E185D77EA4114B56C8FCD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		EFCFE33812A44A40A161CAD8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk;
+				SYMROOT = "/Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106/build";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5732F9200B8549DD83C36397 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+		26DD4E5381B942D68F7D12BF /* Build configuration list for PBXNativeTarget "sndlib" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B87320085E054B2197FB3CD7 /* Debug */,
-				7C27F22B1C674783B01FC07C /* Release */,
-				554E5FBE1D6F4F908AE2C75A /* MinSizeRel */,
-				1C41EB4DC745474996B39834 /* RelWithDebInfo */,
+				0694A1CF843D47B5A955DD5B /* Debug */,
+				868E0F965C654757855ED588 /* Release */,
+				2F004D0BAC5642B880316AE7 /* MinSizeRel */,
+				C36E716AA1334A8AA7C05A85 /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		5EBC6CC2C7B74174B81E1184 /* Build configuration list for PBXNativeTarget "MUSI6106Exec" */ = {
+		55230FE43A3D4676B5F01910 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				86BA01967D694FCC8E2D4113 /* Debug */,
-				189D66B00C484418802193CD /* Release */,
-				B74D105DC35940B094323746 /* MinSizeRel */,
-				947025C8217949ECBDA8A479 /* RelWithDebInfo */,
+				EE8E185D77EA4114B56C8FCD /* Debug */,
+				25AB4D477753440395866885 /* Release */,
+				77D1C59D2EF64529961AD491 /* MinSizeRel */,
+				7EBAD6AFB975486792F4578A /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		C5C2B3F4980A402CA569823A /* Build configuration list for PBXNativeTarget "sndlib" */ = {
+		78AAD287B83D4361820C3A4D /* Build configuration list for PBXProject "MUSI6106" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				751F44FD07BA4875A9113A63 /* Debug */,
-				F1E51AED96D449158CED1E09 /* Release */,
-				D446F72B02F5401BBF211B01 /* MinSizeRel */,
-				DA90AA25CB904FA9B4F72084 /* RelWithDebInfo */,
+				EFCFE33812A44A40A161CAD8 /* Debug */,
+				1CE6516587D944979BEB0DD0 /* Release */,
+				53B9CDBF9F5C4F3DBDF0AA5D /* MinSizeRel */,
+				EE3ED79725B3440B80CF4C96 /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		DB16B6A2B4F44F5E80F53C2F /* Build configuration list for PBXNativeTarget "CombFilter" */ = {
+		99DD4AB47074448DAFC4C6E8 /* Build configuration list for PBXNativeTarget "AudioFileIO" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8CDEF94ACCA449A59D4732F1 /* Debug */,
-				0169273789A342EA8C7587B0 /* Release */,
-				6DC9BBB960C242399468DBF3 /* MinSizeRel */,
-				8CDBEC369F39411FA79D9630 /* RelWithDebInfo */,
+				BB41F6DA4A8B414BB42418C4 /* Debug */,
+				6AB70E2A62A542C1B34208D4 /* Release */,
+				7B7251246D6F449488E06818 /* MinSizeRel */,
+				8139C284CC3443D1A5967E97 /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		DCB8A9DF14974443BCFD0365 /* Build configuration list for PBXNativeTarget "AudioFileIO" */ = {
+		AE1235B0AC7D43E79C3B51CE /* Build configuration list for PBXNativeTarget "MUSI6106Exec" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				338CAEE9194246CABFC9ADF8 /* Debug */,
-				CAC8C288496D423691C137F3 /* Release */,
-				7A2C53E5DF2E4A4D93EC9DE0 /* MinSizeRel */,
-				2085ECF1656649B5ACEACF3A /* RelWithDebInfo */,
+				D56F7BA752AB44E1AE021EAA /* Debug */,
+				CD3B316AEF194CCA990191EC /* Release */,
+				593C4CF885C34602AD669041 /* MinSizeRel */,
+				B177FDC2F56943A1A4BFF746 /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		DFACCDF785714ACC8914BA4B /* Build configuration list for PBXProject "MUSI6106" */ = {
+		BDEA2CFF3E0946C9BD77D582 /* Build configuration list for PBXNativeTarget "CombFilter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1AEB563101594039BD096E09 /* Debug */,
-				2B94CABB59174C1FA05E5BAA /* Release */,
-				199C4C3D916C4F79B42B904E /* MinSizeRel */,
-				C15DCDE0F8D6407B9ADAEF70 /* RelWithDebInfo */,
+				BC2E89DA0DEF4899BDF7B6EC /* Debug */,
+				EA3F0AAA81894F9F8F07F425 /* Release */,
+				21B6FA9738154D24BB4A5C2B /* MinSizeRel */,
+				55263A8F11C343509A7B1047 /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		F0813BFF8FA04E758C111370 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+		CF69B335CCCA439A90B0878C /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BF7BADC4ADA446F0A6D1F246 /* Debug */,
-				85DDC0CD8FBD46818947CC63 /* Release */,
-				10983A4817FB428495569D59 /* MinSizeRel */,
-				6105B35F14C24694B974ADA1 /* RelWithDebInfo */,
+				55BADE61F3A04275A37C88DE /* Debug */,
+				B7B46C030E1A4FBB9BF06E44 /* Release */,
+				0CB4272601574B60A34190D5 /* MinSizeRel */,
+				38794C5791A549B593C62E51 /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;

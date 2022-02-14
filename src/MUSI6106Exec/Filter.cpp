@@ -1,27 +1,39 @@
+//
+// Created by Admin on 2/14/22.
+//
 
-#include <iostream>
-#include <ctime>
-
-#include "MUSI6106Config.h"
-
-#include "AudioFileIf.h"
-#include "CombFilterIf.h"
-#include <cassert>
-#include <stdlib.h>
-#include <stdio.h>
 #include "Filter.h"
 
-using std::cout;
-using std::endl;
 
-//============================================================================
-// Define Tests
-//============================================================================
-void    showClInfo ();
-
-// main function
-int main(int argc, char* argv[])
+Error_t Filter::setInputFilePath(std::string sFilepath)
 {
+    mInputFilePath = sFilepath;
+    return Error_t::kNoError;
+}
+
+Error_t Filter::setOutputFilePath(std::string sFilePath)
+{
+    mOutputFilePath = sFilePath;
+    return Error_t::kNoError;
+}
+
+Error_t Filter::setFilterType(std::string sFiltertype) {
+    mFilterType = sFiltertype;
+    return Error_t::kNoError;
+}
+
+Error_t Filter::setDelay(float fDelay) {
+    mDelayInSeconds = fDelay;
+    return Error_t::kNoError;
+}
+
+Error_t Filter::setGain(float fGain) {
+    mGain = fGain;
+    return Error_t::kNoError;
+}
+
+Error_t  Filter::processAudio(std::string sInputFilePath, std::string sOutputFilePath, std::string sFilterType, float fDelay,
+                     float fGain) {
 
     //============================================================================
     // Initialize pointers and inputs
@@ -35,49 +47,19 @@ int main(int argc, char* argv[])
     CAudioFileIf            *phInputAudioFile = nullptr,
                             *phOutputAudioFile = nullptr;
 
-    std::string             sInputFilePath,
-                            sOutputFilePath,
-                            sFilterType;
 
     float                   delayTimeInSeconds,
-                            gain;
+            gain;
 
     CAudioFileIf::FileSpec_t stFileSpec;
-    showClInfo();
 
     // Initialize CombFilter
     CCombFilterIf           *pCombFilter = nullptr;
     CCombFilterIf::CombFilterType_t eFilterType;
 
 
-    //============================================================================
-    // Parse CL Arguments
-    //============================================================================
-
-    if (argc == 1)
-    {
-        cout << "Running Tests" << endl;
-        return -1;
-    }
-
-    if(argc > 1 && argc != 6)
-    {
-        std::cout << "Arguments: " << std::endl;
-        std::cout << "<input audio Path>" << std::endl;
-        std::cout << "<output audio path>" << std::endl;
-        std::cout << "filter type: <FIR> or <IIR>" << std::endl;
-        std::cout << "<delay in seconds> (>= 0)" << std::endl;
-        std::cout << "<gain> (-1.0 .... 1.0)"<< std::endl;
-        return -1;
-    }
-    else
-    {
-        sInputFilePath = argv[1];
-        sOutputFilePath = argv[2];
-        sFilterType = argv[3];
-        delayTimeInSeconds = atof(argv[4]);
-        gain = atof(argv[5]);
-    }
+    delayTimeInSeconds = fDelay;
+    gain = fGain;
 
     if (sFilterType == "FIR")
     {
@@ -99,10 +81,8 @@ int main(int argc, char* argv[])
     {
         cout << "Input wave file open error!" << endl;
         CAudioFileIf::destroy(phInputAudioFile);
-        return -1;
     }
     phInputAudioFile->getFileSpec(stFileSpec);
-
 
     //============================================================================
     // Open the output audio file
@@ -117,7 +97,6 @@ int main(int argc, char* argv[])
     {
         cout << "Output wave file open error!" << endl;
         CAudioFileIf::destroy(phOutputAudioFile);
-        return -1;
     }
 
     // allocate memory
@@ -135,7 +114,6 @@ int main(int argc, char* argv[])
     {
         CAudioFileIf::destroy(phInputAudioFile);
         CAudioFileIf::destroy(phOutputAudioFile);
-        return -1;
     }
 
     //============================================================================
@@ -144,8 +122,8 @@ int main(int argc, char* argv[])
 
     CCombFilterIf::create(pCombFilter);
     pCombFilter -> init(eFilterType, delayTimeInSeconds,
-                       stFileSpec.fSampleRateInHz ,
-                       stFileSpec.iNumChannels);
+                        stFileSpec.fSampleRateInHz ,
+                        stFileSpec.iNumChannels);
     float delayTimeInSamples = delayTimeInSeconds * stFileSpec.fSampleRateInHz;
     pCombFilter -> setParam(CCombFilterIf::FilterParam_t::kParamGain, gain );
     pCombFilter -> setParam(CCombFilterIf::FilterParam_t::kParamDelay, delayTimeInSamples );
@@ -191,14 +169,7 @@ int main(int argc, char* argv[])
     ppfOutputAudioData = nullptr;
 
     // all done
-    return 0;
 
-}
-
-void     showClInfo()
-{
-    cout << "MUSI6106 Assignment Executable" << endl;
-    cout << "(c) 2014-2022 by Alexander Lerch" << endl;
-    cout  << endl;
+    return Error_t::kNoError;
 }
 
