@@ -74,12 +74,12 @@ Error_t CCombFilterIf::init (CombFilterType_t eFilterType, float fMaxDelayLength
 
     if (eFilterType == kCombFIR)
     {
-        m_pCCombFilter = new CCombFilterFIR;
+        m_pCCombFilter = new CCombFilterFIR ();
         m_pCCombFilter -> initCombFilter(fMaxDelayLengthInS, fSampleRateInHz, iNumChannels);
     }
     else if (eFilterType == kCombIIR)
     {
-        m_pCCombFilter = new CCombFilterIIR;
+        m_pCCombFilter = new CCombFilterIIR ();
         m_pCCombFilter -> initCombFilter(fMaxDelayLengthInS, fSampleRateInHz, iNumChannels);
     }
 
@@ -89,12 +89,8 @@ Error_t CCombFilterIf::init (CombFilterType_t eFilterType, float fMaxDelayLength
 
 Error_t CCombFilterIf::reset ()
 {
-
-    m_pCCombFilter = nullptr;
+    m_pCCombFilter = 0;
     m_fSampleRate = 0;
-    setParam(FilterParam_t::kParamGain, 0.0f);
-    setParam(FilterParam_t::kParamDelay, 0.0f);
-
     m_bIsInitialized= false;
     return Error_t::kNoError;
 }
@@ -105,7 +101,7 @@ Error_t CCombFilterIf::process (float **ppfInputBuffer, float **ppfOutputBuffer,
 //    {
 //        return Error_t::kNotInitializedError;
 //    }
-    m_pCCombFilter -> process( ppfInputBuffer, ppfOutputBuffer, iNumberOfFrames);
+    m_pCCombFilter -> processFilter( ppfInputBuffer, ppfOutputBuffer, iNumberOfFrames);
     return Error_t::kNoError;
 }
 

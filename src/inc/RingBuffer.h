@@ -5,6 +5,7 @@
 #include <algorithm>
 #include <cmath>
 #include <cstring>
+using namespace std;
 
 /*! \brief implement a circular buffer of type T
 */
@@ -72,7 +73,7 @@ public:
     */
     void reset()
     {
-        std::memset (m_ptBuff, 0, sizeof(T)*m_iBuffLength);
+        memset (m_ptBuff, 0, sizeof(T)*m_iBuffLength);
         m_iReadIdx  = 0;
         m_iWriteIdx = 0;
     }

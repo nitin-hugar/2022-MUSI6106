@@ -7,6 +7,7 @@
 #include "AudioFileIf.h"
 #include "CombFilterIf.h"
 
+
 using std::cout;
 using std::endl;
 
@@ -39,11 +40,11 @@ int main(int argc, char* argv[])
 
     std::string sInputFilePath = "/Users/apple/Desktop/4.wav";
     std::string sOutputFilePath = "/Users/apple/Desktop/filteredOutput.wav";
-    float delayTimeInSeconds = 0.25;
-    float gain = 2.0;
+    float delayTimeInSeconds = 1.5;
+    float gain = 0.5;
 
     // Initialize CombFilter
-    CCombFilterIf *pCombFilter;
+    CCombFilterIf *pCombFilter = nullptr;
     CCombFilterIf::CombFilterType_t eFilterType = CCombFilterIf::kCombFIR;
 
     //============================================================================
@@ -103,8 +104,9 @@ int main(int argc, char* argv[])
     pCombFilter -> init(eFilterType, delayTimeInSeconds,
                        stFileSpec.fSampleRateInHz ,
                        stFileSpec.iNumChannels);
+    float delayTimeInSamples = delayTimeInSeconds * stFileSpec.fSampleRateInHz;
     pCombFilter -> setParam(CCombFilterIf::FilterParam_t::kParamGain, gain );
-
+    pCombFilter -> setParam(CCombFilterIf::FilterParam_t::kParamDelay, delayTimeInSamples );
     // Not setting Delay time again since it is redundant
 
 
