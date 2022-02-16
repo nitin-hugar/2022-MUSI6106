@@ -128,17 +128,17 @@ void runAllTests()
     //============================================================================
     // Test 4
     //============================================================================
-//
-//    cout << "Running test 4" << endl;
-//    std::string t4_sInputFilePath = "/Users/apple/Desktop/4.wav";
-//    std::string t4_sOutputFilePath = "/Users/apple/Desktop/test4_output.wav";
-//    std::string t4_sFilterType = "FIR";
-//    float t4_delayTimeInSeconds = 0.01f;
-//    float t4_gain = -1.0f;
-//    int t4_iBlockSize = 512;
-//
-//    test1(t4_sInputFilePath, t4_sOutputFilePath,
-//          t4_sFilterType, t4_delayTimeInSeconds, t4_gain, t4_iBlockSize);
+
+    cout << "Running test 4" << endl;
+    std::string t4_sInputFilePath = "/Users/apple/Desktop/silence.wav";
+    std::string t4_sOutputFilePath = "/Users/apple/Desktop/test4_output.wav";
+    std::string t4_sFilterType = "FIR";
+    float t4_delayTimeInSeconds = 0.01f;
+    float t4_gain = 1.0f;
+    int t4_iBlockSize = 1024;
+
+    test1(t4_sInputFilePath, t4_sOutputFilePath,
+          t4_sFilterType, t4_delayTimeInSeconds, t4_gain, t4_iBlockSize);
 
     //============================================================================
     // Test 5
