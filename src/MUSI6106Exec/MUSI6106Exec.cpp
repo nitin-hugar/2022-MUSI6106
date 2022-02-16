@@ -72,7 +72,7 @@ void test1(std::string sInputFilePath, std::string sOutputFilePath,std::string s
     Filter filter;
     filter.setParams(sInputFilePath, sOutputFilePath, sFilterType, delayTimeInSeconds, gain, iBlockSize);
     filter.processAudio();
-    cout << "Test1 succeeded! File saved to " << sOutputFilePath << endl;
+    cout << "File saved to " << sOutputFilePath << endl;
 }
 
 void runAllTests()
@@ -84,8 +84,8 @@ void runAllTests()
     //============================================================================
 
     cout << "Running test 1" << endl;
-    std::string t1_sInputFilePath = "/Users/apple/Desktop/4.wav";
-    std::string t1_sOutputFilePath = "/Users/apple/Desktop/test1_output.wav";
+    std::string t1_sInputFilePath = "../../InputAudio/sine440.wav";
+    std::string t1_sOutputFilePath = "../../OutputAudio/test1_output.wav";
     std::string t1_sFilterType = "FIR";
     float t1_delayTimeInSeconds = 0.01f;
     float t1_gain = -1.0f;
@@ -100,8 +100,8 @@ void runAllTests()
     //============================================================================
 
     cout << "Running test 2" << endl;
-    std::string t2_sInputFilePath = "/Users/apple/Desktop/4.wav";
-    std::string t2_sOutputFilePath = "/Users/apple/Desktop/test2_output.wav";
+    std::string t2_sInputFilePath = "../../InputAudio/sine440.wav";
+    std::string t2_sOutputFilePath = "../../OutputAudio/test2_output.wav";
     std::string t2_sFilterType = "IIR";
     float t2_delayTimeInSeconds = 0.1f;
     float t2_gain = 0.5f;
@@ -115,8 +115,8 @@ void runAllTests()
     //============================================================================
 
     cout << "Running test 3" << endl;
-    std::string t3_sInputFilePath = "/Users/apple/Desktop/4.wav";
-    std::string t3_sOutputFilePath = "/Users/apple/Desktop/test3_output.wav";
+    std::string t3_sInputFilePath = "../../InputAudio/sine440.wav";
+    std::string t3_sOutputFilePath = "../../OutputAudio/test3_output.wav";
     std::string t3_sFilterType = "FIR";
     float t3_delayTimeInSeconds = 0.01f;
     float t3_gain = -0.5f;
@@ -130,8 +130,8 @@ void runAllTests()
     //============================================================================
 
     cout << "Running test 4" << endl;
-    std::string t4_sInputFilePath = "/Users/apple/Desktop/silence.wav";
-    std::string t4_sOutputFilePath = "/Users/apple/Desktop/test4_output.wav";
+    std::string t4_sInputFilePath = "../../InputAudio/silence.wav";
+    std::string t4_sOutputFilePath = "../../OutputAudio/test4_output.wav";
     std::string t4_sFilterType = "FIR";
     float t4_delayTimeInSeconds = 0.01f;
     float t4_gain = 1.0f;
@@ -145,8 +145,8 @@ void runAllTests()
     //============================================================================
 
     cout << "Running test 5" << endl;
-    std::string t5_sInputFilePath = "/Users/apple/Desktop/4.wav";
-    std::string t5_sOutputFilePath = "/Users/apple/Desktop/test5_output.wav";
+    std::string t5_sInputFilePath = "../../InputAudio/sine440.wav";
+    std::string t5_sOutputFilePath = "../../OutputAudio/test5_output.wav";
     std::string t5_sFilterType = "FIR";
     float t5_delayTimeInSeconds = -0.25f;
     float t5_gain = -2.0f;
