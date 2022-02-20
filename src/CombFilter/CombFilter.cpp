@@ -55,7 +55,7 @@ Error_t CCombFilterBase::initCombFilter(float fMaxDelayLengthInS, float fSampleR
     setNumOfChannels(iNumChannels);
     setSampleRate(fSampleRateInHz);
 
-    for (int m =0; m < getNumOfChannels(); m++)
+    for (int m =0; m < iNumChannels; m++)
     {
         pCRingBuff[m] = new CRingBuffer<float> (mDelayInSamples);
         pCRingBuff[m] -> reset();
