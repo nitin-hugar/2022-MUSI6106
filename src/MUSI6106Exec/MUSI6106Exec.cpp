@@ -124,9 +124,9 @@ void runAllTests()
     float t3_gain = 1.0f;
     int t3_iBlockSize[] = {512, 1024, 4096};
 
-    for (int j = 0; j < sizeof(t3_sFilterType); j++)
+    for (int j = 0; j < 2; j++)
     {
-        for (int i = 0; i < sizeof(t3_iBlockSize); i++)
+        for (int i = 0; i < 3; i++)
         {
             testFunction(t3_sInputFilePath, t3_sOutputFilePath[j][i],
                          t3_sFilterType[j], t3_delayTimeInSeconds, t3_gain,
@@ -141,13 +141,13 @@ void runAllTests()
 
     cout << "Running test 4" << endl;
     std::string t4_sInputFilePath = "../../InputAudio/silence.wav";
-    std::string t4_sOutputFilePath[] = {"../../OutputAudio/test4FIR_output.wav", "../../OutputAudio/test4IIR_output.wav"};
+    std::string t4_sOutputFilePath[2] = {"../../OutputAudio/test4FIR_output.wav", "../../OutputAudio/test4IIR_output.wav"};
     std::string t4_sFilterType[] = {"FIR", "IIR"};
     float t4_delayTimeInSeconds = 0.5f;
     float t4_gain = 1.0f;
     int t4_iBlockSize = 1024;
 
-    for (int i; i< sizeof(t4_sFilterType); i++)
+    for (int i =0; i< 2 ; i++)
     {
         testFunction(t4_sInputFilePath, t4_sOutputFilePath[i],
                      t4_sFilterType[i], t4_delayTimeInSeconds, t4_gain, t4_iBlockSize);
