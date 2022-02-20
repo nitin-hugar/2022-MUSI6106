@@ -17,9 +17,6 @@
 	"dependencies" : 
 	[
 		{
-			"id" : "MUSI6106Exec::@1ca4e22c5ff24413807f"
-		},
-		{
 			"id" : "AudioFileIO::@14733eaaa109906c281b"
 		},
 		{
@@ -27,6 +24,9 @@
 		},
 		{
 			"id" : "CombFilter::@7656a2d9f153a0096c6a"
+		},
+		{
+			"id" : "MUSI6106Exec::@1ca4e22c5ff24413807f"
 		},
 		{
 			"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df"
