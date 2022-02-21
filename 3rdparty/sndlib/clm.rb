@@ -63,7 +63,7 @@
 #  
 # backward compatibility methods:
 #  String#to_sym, Symbol#to_sym
-#  make_array(len, init, &body)
+#  make_array(len, initCombFilter, &body)
 #  Array#insert
 #  Float#step
 #  Range#step
@@ -106,7 +106,7 @@
 #
 # class Vec < Array
 #  Vec[]
-#  initialize(len, init, &body)
+#  initialize(len, initCombFilter, &body)
 #  inspect
 #  to_s
 #  to_vector
@@ -115,7 +115,7 @@
 #  *(other)
 #
 # Vec(obj)
-# make_vector(len, init, &body)
+# make_vector(len, initCombFilter, &body)
 # vector?(obj)
 # vector(*args)
 #
@@ -124,7 +124,7 @@
 #  to_vct
 #
 # Vct(obj)
-# make_vct!(len, init) do |i| ... end
+# make_vct!(len, initCombFilter) do |i| ... end
 #
 # class Vct
 #  Vct[]
@@ -849,12 +849,12 @@ end
 # make_array(10)
 # make_array(10, 1.0)
 # make_array(10) do |i| ... end
-def make_array(len = 0, init = nil)
+def make_array(len = 0, initCombFilter = nil)
   if len >= 0
     if block_given?
-      Array.new(len, init).map_with_index do |x, i| yield(i) end
+      Array.new(len, initCombFilter).map_with_index do |x, i| yield(i) end
     else
-      Array.new(len, init)
+      Array.new(len, initCombFilter)
     end
   else
     Kernel.raise(TypeError, format("array length < 0 (%s)?", len.inspect))
@@ -1176,13 +1176,13 @@ class Vec < Array
     self.new(ary.length) do |i| ary[i] end
   end
   
-  def initialize(len, init = 0.0, &body)
+  def initialize(len, initCombFilter = 0.0, &body)
     @name = "vector"
     if len >= 0
       if block_given?
         super(len, &body)
       else
-        super(len, init)
+        super(len, initCombFilter)
       end
     else
       Kernel.raise(TypeError, format("array length < 0 (%s)?", len.inspect))
@@ -1251,8 +1251,8 @@ def Vec(obj)
   obj.to_vector
 end
 
-def make_vector(len, init = 0.0, &body)
-  Vec.new(len, init, &body)
+def make_vector(len, initCombFilter = 0.0, &body)
+  Vec.new(len, initCombFilter, &body)
 end
 
 def vector?(obj)
@@ -1288,11 +1288,11 @@ def Vct(obj)
   obj.to_vct
 end
 
-def make_vct!(len, init = 0.0, &body)
+def make_vct!(len, initCombFilter = 0.0, &body)
   if block_given?
     Vct.new(len, &body)
   else
-    Vct.new(len, init)
+    Vct.new(len, initCombFilter)
   end
 end
 

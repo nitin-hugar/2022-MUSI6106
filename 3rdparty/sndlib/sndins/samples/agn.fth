@@ -55,7 +55,7 @@ require env
 #f value agn-amps
 #f value agn-begs
 
-: agn-init ( -- )
+: agn-initCombFilter ( -- )
   agn-lim make-array map!
     1.0 random rbell f2* 4.0 f+ floor
   end-map to agn-octs
@@ -88,7 +88,7 @@ require env
      '( 0 0 10 1 32 0.1 50 1 90 0.3 100 0 )
      '( 0 0 60 0.1 80 0.3 95 1 100 0 )
      '( 0 0 80 0.1 90 1 100 0 ) ) { wins }
-  agn-init
+  agn-initCombFilter
   4 1 do
     0 4 0 { cellbeg cellsiz cellctr }
     1 i s>f i 1- s>f 0.2 { whichway base mi mytempo }

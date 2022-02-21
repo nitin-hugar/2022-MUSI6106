@@ -33,7 +33,7 @@
  * s7, Bill Schottstaedt, Aug-08
  *
  *   changes from tinyScheme:
- *        just two files: s7.c and s7.h, source-level embeddable (no library, no run-time init files)
+ *        just two files: s7.c and s7.h, source-level embeddable (no library, no run-time initCombFilter files)
  *        full continuations, call-with-exit for goto or return, dynamic-wind
  *        ratios and complex numbers (and ints are 64-bit by default)
  *          optional multiprecision arithmetic for all numeric types and functions
@@ -239,7 +239,7 @@
 #ifndef WITH_C_LOADER
   #define WITH_C_LOADER WITH_GCC
   /* (load file.so [e]) looks for (e 'init_func) and if found, calls it
-   *   as the shared object init function.  If WITH_SYSTEM_EXTRAS is 0, the caller
+   *   as the shared object initCombFilter function.  If WITH_SYSTEM_EXTRAS is 0, the caller
    *   needs to supply system and delete-file so that cload.scm works.
    */
 #endif
@@ -260,7 +260,7 @@
  *      inexact/exact and #i #e
  *      `#() special cases (on the switch WITH_QUASIQUOTE_VECTOR)
  *      call-with-values etc
- *      char-ready? and eof-object? [s7-slib-init.scm currently says we have char-ready? otherwise only occurs in s7test.scm]
+ *      char-ready? and eof-object? [s7-slib-initCombFilter.scm currently says we have char-ready? otherwise only occurs in s7test.scm]
  *      dfls exponents (WITH_EXTRA_EXPONENT_MARKERS currently)
  *      unquote (on the switch WITH_IMMUTABLE_UNQUOTE currently)
  */
@@ -21131,7 +21131,7 @@ static int string_read_white_space(s7_scheme *sc, s7_pointer pt)
    *   is slower.
    */
   orig_str = str;
-  while (white_space[c1 = (unsigned char)(*str++)]) /* (let ((ÿa 1)) ÿa) -- 255 is not -1 = EOF */
+  while (white_space[c1 = (unsigned char)(*str++)]) /* (let ((ï¿½a 1)) ï¿½a) -- 255 is not -1 = EOF */
     if (c1 == '\n')
       port_line_number(pt)++;
 
@@ -22558,7 +22558,7 @@ defaults to the global environment.  To load into the current environment instea
 	    else fprintf(stderr, "load %s failed: %s\n", pwd_name, dlerror());
 	    free(pwd_name);
 	  }
-	else fprintf(stderr, "can't load %s: no init function\n", fname);
+	else fprintf(stderr, "can't load %s: no initCombFilter function\n", fname);
 	return(sc->F);
       }
   }
@@ -35633,7 +35633,7 @@ static s7_pointer closure_or_f(s7_scheme *sc, s7_pointer p)
 
 static s7_pointer g_dynamic_wind(s7_scheme *sc, s7_pointer args)
 {
-  #define H_dynamic_wind "(dynamic-wind init body finish) calls init, then body, then finish, \
+  #define H_dynamic_wind "(dynamic-wind initCombFilter body finish) calls initCombFilter, then body, then finish, \
 each a function of no arguments, guaranteeing that finish is called even if body is exited"
   s7_pointer p;
 
@@ -35690,10 +35690,10 @@ each a function of no arguments, guaranteeing that finish is called even if body
 
 /* C-side dynamic-wind would need at least void* context pointer passed to each function,
  *   and to fit with the scheme-side stuff above, the functions need to be s7 functions,
- *   so I wonder if it could be s7_dynamic_wind(s7_scheme *sc, s7_pointer init, s7_pointer body, s7_pointer finish)
+ *   so I wonder if it could be s7_dynamic_wind(s7_scheme *sc, s7_pointer initCombFilter, s7_pointer body, s7_pointer finish)
  *   and the caller would use the C-closure idea (s7.html) to package up C-side data.
  *   Then, the caller would probably assume a return value, requiring s7_call?
- *   -> g_dynamic_wind(sc, list_3(sc, init, body, finish)) but with eval(sc, OP_APPLY) at end?
+ *   -> g_dynamic_wind(sc, list_3(sc, initCombFilter, body, finish)) but with eval(sc, OP_APPLY) at end?
  */
 
 
@@ -47304,7 +47304,7 @@ static dox_function dox_mutate(s7_scheme *sc, s7_pointer slot)
 
 static dox_function step_dox_eval(s7_scheme *sc, s7_pointer code, s7_pointer var)
 {
-  /* called in check_do, var=NULL if this is an init (not a step) check, code is the expr for var */
+  /* called in check_do, var=NULL if this is an initCombFilter (not a step) check, code is the expr for var */
   switch (optimize_data(code))
     {
     case HOP_SAFE_C_C: 
@@ -47526,7 +47526,7 @@ static s7_function end_dox_eval(s7_scheme *sc, s7_pointer code)
     case HOP_SAFE_C_C: 
       if (fcdr(code) == (s7_pointer)g_equal_s_ic)
 	{
-	  set_optimize_data(code, HOP_SAFE_C_SC); /* so the dox init section will pass us the cadr slot */
+	  set_optimize_data(code, HOP_SAFE_C_SC); /* so the dox initCombFilter section will pass us the cadr slot */
 	  return(end_dox_equal_s_ic);
 	}					
       if (fcdr(code) == (s7_pointer)g_or_all_x)
@@ -47676,7 +47676,7 @@ static s7_pointer check_do(s7_scheme *sc)
       /* fprintf(stderr, "do %s %s\n", DISPLAY(body), opt_name(car(body))); */
       
       /* (define (hi) (do ((i 1.5 (+ i 1))) ((= i 2.5)) (display i) (newline)))
-       *   in OP_SAFE_DOTIMES, for example, if init value is not an integer, it goes to OP_SIMPLE_DO
+       *   in OP_SAFE_DOTIMES, for example, if initCombFilter value is not an integer, it goes to OP_SIMPLE_DO
        * remaining optimizable cases: we can step by 1 and use = for end, and yet simple_do(_p) calls the functions
        * geq happens as often as =, and -1 as step
        * also cdr as step to is_null as end
@@ -47911,7 +47911,7 @@ static s7_pointer check_do(s7_scheme *sc)
 
 	      if (!is_init_dox_safe(sc, cadr(var)))
 		{
-		  /* fprintf(stderr, "init: %s %s\n", DISPLAY(cadr(var)), (is_optimized(cadr(var))) ? opt_names[optimize_data(cadr(var))] : ""); */
+		  /* fprintf(stderr, "initCombFilter: %s %s\n", DISPLAY(cadr(var)), (is_optimized(cadr(var))) ? opt_names[optimize_data(cadr(var))] : ""); */
 		  return(sc->code);
 		}
 	      
@@ -47923,7 +47923,7 @@ static s7_pointer check_do(s7_scheme *sc)
 		}
 	      /* we want to use the pending_value slot for other purposes, so make sure
 	       *   the current val is not referred to in any trailing step exprs.  The inits
-	       *   are ok because at init-time, the new frame is not connected.
+	       *   are ok because at initCombFilter-time, the new frame is not connected.
 	       *
 	       * another tricky case: current var might be used in previous step expr(!)
 	       */
@@ -47957,7 +47957,7 @@ static s7_pointer check_do(s7_scheme *sc)
 
 	      if ((is_pair(cadr(var))) &&
 		  (caadr(var) != sc->QUOTE))
-		set_fcdr(cdr(var), (s7_pointer)step_dox_eval(sc, cadr(var), NULL));         /* init choice */
+		set_fcdr(cdr(var), (s7_pointer)step_dox_eval(sc, cadr(var), NULL));         /* initCombFilter choice */
 
 	      if (is_pair(cddr(var)))
 		{
@@ -48001,7 +48001,7 @@ static s7_pointer check_do(s7_scheme *sc)
       /* step var is mutable if it does not occur in the body, or only occurs outside a setter/closure
        *   or it's only an index in a setter, 
        *   and there are no unexpanded macros or unknown ops (implicit indexing).
-       * We'd pass that as arg to step_dox_eval, then choose init/step funcs that do not allocate after the init
+       * We'd pass that as arg to step_dox_eval, then choose initCombFilter/step funcs that do not allocate after the initCombFilter
        */
 
       /* if ((fcdr(cdr(sc->code)) == end_dox_c_ss) &&
@@ -50780,7 +50780,7 @@ static s7_pointer eval(s7_scheme *sc, opcode_t first_op)
 	  goto DO_END;
 	}
       
-      /* eval each init value, then set up the new frame (like let, not let*) */
+      /* eval each initCombFilter value, then set up the new frame (like let, not let*) */
       sc->args = sc->NIL;                             /* the evaluated var-data */
       sc->value = sc->code;                           /* protect it */
       sc->code = car(sc->code);                       /* the vars */
@@ -50793,7 +50793,7 @@ static s7_pointer eval(s7_scheme *sc, opcode_t first_op)
       if (is_pair(sc->code))
 	{
 	  /* here sc->code is a list like: ((i 0 (+ i 1)) ...)
-	   *   so cadar gets the init value.
+	   *   so cadar gets the initCombFilter value.
 	   *
 	   * we accept:
 	   *       (do ((i 1) (i 2)) (#t i)) -> 2
@@ -50820,7 +50820,7 @@ static s7_pointer eval(s7_scheme *sc, opcode_t first_op)
 	sc->args = safe_reverse_in_place(sc, sc->args);
 	sc->code = car(sc->args);                       /* saved at the start */
 	z = sc->args;
-	sc->args = cdr(sc->args);                       /* init values */
+	sc->args = cdr(sc->args);                       /* initCombFilter values */
 
 	/* sc->envir = new_frame_in_env(sc, sc->envir); */
 	/* sc->args was cons'd above, so it should be safe to reuse it as the new frame */
@@ -50884,7 +50884,7 @@ static s7_pointer eval(s7_scheme *sc, opcode_t first_op)
 	sc->args = cons(sc, safe_reverse_in_place(sc, sc->value), cadr(sc->code));
 	sc->code = cddr(sc->code);
 	
-	/* here args is a list of 2 or 3 lists, first is (list (list (var . binding) incr-expr init-value) ...), second is end-expr, third can be result expr
+	/* here args is a list of 2 or 3 lists, first is (list (list (var . binding) incr-expr initCombFilter-value) ...), second is end-expr, third can be result expr
 	 *   so for (do ((i 0 (+ i 1))) ((= i 3) (+ i 1)) ...) args is ((((i . 0) (+ i 1) 0 #f)) (= i 3) (+ i 1))
 	 */
       }
@@ -50893,7 +50893,7 @@ static s7_pointer eval(s7_scheme *sc, opcode_t first_op)
       /* --------------- */
     DO_END:
     case OP_DO_END:
-      /* here vars have been init'd or incr'd
+      /* here vars have been initCombFilter'd or incr'd
        *    args = (list var-data end-expr return-expr-if-any)
        *      if (do ((i 0 (+ i 1))) ((= i 3) 10)),            args: (vars (= i 3) 10)
        *      if (do ((i 0 (+ i 1))) ((= i 3))),               args: (vars (= i 3)) and result expr is () == (begin)
@@ -59552,7 +59552,7 @@ static s7_pointer eval(s7_scheme *sc, opcode_t first_op)
       
       /* --------------- */
     case OP_LET_C:
-      /* one var, init is constant, incoming sc->code is '(((var val))...)!
+      /* one var, initCombFilter is constant, incoming sc->code is '(((var val))...)!
        */
       NEW_FRAME_WITH_SLOT(sc, sc->envir, sc->envir, gcdr(sc->code), fcdr(sc->code));
       sc->code = cdr(sc->code);
@@ -59564,7 +59564,7 @@ static s7_pointer eval(s7_scheme *sc, opcode_t first_op)
       
       /* --------------- */
     case OP_LET_C_P:
-      /* one var, init is constant, incoming sc->code is '(((var val))...)!
+      /* one var, initCombFilter is constant, incoming sc->code is '(((var val))...)!
        *   body is one statement
        */
       NEW_FRAME_WITH_SLOT(sc, sc->envir, sc->envir, gcdr(sc->code), fcdr(sc->code));
@@ -59574,7 +59574,7 @@ static s7_pointer eval(s7_scheme *sc, opcode_t first_op)
       
       /* --------------- */
     case OP_LET_C_D:
-      /* one var, init is constant, incoming sc->code is '(((var val))...)!
+      /* one var, initCombFilter is constant, incoming sc->code is '(((var val))...)!
        *   body is one optimized statement
        */
       NEW_FRAME_WITH_SLOT(sc, sc->envir, sc->envir, gcdr(sc->code), fcdr(sc->code));
@@ -59584,7 +59584,7 @@ static s7_pointer eval(s7_scheme *sc, opcode_t first_op)
       
       /* --------------- */
     case OP_LET_S:
-      /* one var, init is symbol, incoming sc->code is '(((var sym))...)
+      /* one var, initCombFilter is symbol, incoming sc->code is '(((var sym))...)
        */
       NEW_FRAME_WITH_SLOT(sc, sc->envir, sc->envir, gcdr(sc->code), finder(sc, fcdr(sc->code)));
       sc->code = cdr(sc->code);
@@ -59595,7 +59595,7 @@ static s7_pointer eval(s7_scheme *sc, opcode_t first_op)
       
       /* --------------- */
     case OP_LET_S_P:
-      /* one var, init is symbol, incoming sc->code is '(((var sym))...)
+      /* one var, initCombFilter is symbol, incoming sc->code is '(((var sym))...)
        */
       NEW_FRAME_WITH_SLOT(sc, sc->envir, sc->envir, gcdr(sc->code), finder(sc, fcdr(sc->code)));
       sc->code = cadr(sc->code);
@@ -59604,7 +59604,7 @@ static s7_pointer eval(s7_scheme *sc, opcode_t first_op)
       
       /* --------------- */
     case OP_LET_Q:
-      /* one var, init is quoted, incoming sc->code is '(((var 'val))...)
+      /* one var, initCombFilter is quoted, incoming sc->code is '(((var 'val))...)
        */
       {
 	s7_pointer binding;
@@ -59643,7 +59643,7 @@ static s7_pointer eval(s7_scheme *sc, opcode_t first_op)
 
       /* --------------- */
     case OP_LET_opCq:
-      /* one var, init is safe_c_c */
+      /* one var, initCombFilter is safe_c_c */
       {
 	s7_pointer binding;
 	binding = caar(sc->code);
@@ -59659,7 +59659,7 @@ static s7_pointer eval(s7_scheme *sc, opcode_t first_op)
 
       /* --------------- */
     case OP_LET_opSSq:
-      /* one var, init is safe_c_ss
+      /* one var, initCombFilter is safe_c_ss
        */
       {
 	s7_pointer binding, largs, in_val;
@@ -66196,7 +66196,7 @@ s7_scheme *s7_init(void)
 
   sc = (s7_scheme *)calloc(1, sizeof(s7_scheme)); /* malloc is not recommended here */
   
-  sc->gc_off = true;                         /* sc->args and so on are not set yet, so a gc during init -> segfault */
+  sc->gc_off = true;                         /* sc->args and so on are not set yet, so a gc during initCombFilter -> segfault */
   sc->gc_stats = false;
   init_gc_caches(sc);
 
@@ -67527,13 +67527,13 @@ s7_scheme *s7_init(void)
                               (error 'syntax-error \"letrec* has no body\")                 \n\
                               (if (not (list? bindings))                                    \n\
                                   (error 'syntax-error \"letrec* variables are messed up\") \n\
-                                  `(let (,@(map (lambda (var&init)                          \n\
-                                                  (list (car var&init) #<undefined>))       \n\
+                                  `(let (,@(map (lambda (var&initCombFilter)                          \n\
+                                                  (list (car var&initCombFilter) #<undefined>))       \n\
                                                 bindings))                                  \n\
-                                     ,@(map (lambda (var&init)                              \n\
-                                              (if (not (null? (cddr var&init)))             \n\
+                                     ,@(map (lambda (var&initCombFilter)                              \n\
+                                              (if (not (null? (cddr var&initCombFilter)))             \n\
                                                   (error 'syntax-error \"letrec* variable has more than one value\")) \n\
-                                              (list 'set! (car var&init) (cadr var&init)))  \n\
+                                              (list 'set! (car var&initCombFilter) (cadr var&initCombFilter)))  \n\
                                              bindings)                                      \n\
                                      ,@body))))");
 
@@ -67631,14 +67631,14 @@ s7_scheme *s7_init(void)
   /* ---------------- hooks ---------------- */
 
   s7_eval_c_string(sc, "(define (make-hook . args)                                                            \n\
-                          (let ((init ())                                                                     \n\
+                          (let ((initCombFilter ())                                                                     \n\
 	                        (body ())                                                                     \n\
 	                        (end ()))                                                                     \n\
                             (apply lambda* args                                                               \n\
                               '(let ((result #<unspecified>))                                                 \n\
                                  (let ((e (current-environment)))                                             \n\
                                    (dynamic-wind                                                              \n\
-	                             (lambda () (for-each (lambda (f) (f e)) init))                           \n\
+	                             (lambda () (for-each (lambda (f) (f e)) initCombFilter))                           \n\
 	                             (lambda () (for-each (lambda (f) (f e)) body) result)                    \n\
 	                             (lambda () (for-each (lambda (f) (f e)) end)))))                         \n\
                               ())))");

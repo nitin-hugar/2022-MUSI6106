@@ -290,7 +290,7 @@ it by:
 
 	(sh)  LD_LIBRARY_PATH=/usr/gnu/lib:${LD_LIBRARY_PATH}; export LD_LIBRARY_PATH
 
-In Snd/Scheme one can add to the ~/.snd init file:
+In Snd/Scheme one can add to the ~/.snd initCombFilter file:
 
 (if (provided? 'snd)
     (begin
@@ -322,7 +322,7 @@ You can install sndlib.so and sndins.so in the ruby library path, e.g.
     make
     install -c sndins.so ~/lib/ruby/site-ruby/
 
-So in Snd/Ruby one can add to the ~/.snd(_ruby) init file:
+So in Snd/Ruby one can add to the ~/.snd(_ruby) initCombFilter file:
 
     require "sndlib"
     require "sndins"
@@ -346,7 +346,7 @@ Installing so-libs in Forth is possible with these command lines:
 These lines install the libraries in ~/lib/fth, the first user
 writeable path.
 
-Then in Snd/Forth one can add to the ~/.snd(_forth) init file:
+Then in Snd/Forth one can add to the ~/.snd(_forth) initCombFilter file:
 
     dl-load sndlib Init_sndlib
     dl-load sndins Init_sndins

@@ -118,8 +118,8 @@ if test "$with_forth" = yes ; then
   AC_PATH_PROG([FTH], [fth], [no])
   AC_MSG_CHECKING([for Forth])
   if test "${FTH}" != no ; then
-    XEN_CFLAGS=`${FTH} --no-init-file --eval .cflags`
-    XEN_LIBS=`${FTH} --no-init-file --eval .libs`
+    XEN_CFLAGS=`${FTH} --no-initCombFilter-file --eval .cflags`
+    XEN_LIBS=`${FTH} --no-initCombFilter-file --eval .libs`
     AC_MSG_RESULT([yes])
     AC_DEFINE(HAVE_FORTH)
     ac_snd_extension_language=Forth

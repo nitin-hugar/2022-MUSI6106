@@ -1033,7 +1033,7 @@ bool s7_is_valid_pointer(s7_pointer arg);
  * 14-Sep:    s7_values, s7_make_continuation, and a better interrupt example.
  *            vector-for-each, vector-map, string-for-each.
  * 7-Sep:     s7_open_input_function. with-environment. receive.
- * 3-Sep:     s7.html, s7-slib-init.scm. 
+ * 3-Sep:     s7.html, s7-slib-initCombFilter.scm.
  *            s7_stacktrace in s7.h.
  * 27-Aug:    vector and hash-table sizes are now s7_Ints, rather than ints.
  * 20-Aug:    s7_remove_from_heap.

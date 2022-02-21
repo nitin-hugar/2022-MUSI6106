@@ -235,7 +235,7 @@
 		 ;; STRETCH mode
 		 (if (= section 0)
 		     ;; initial section
-		     (let ((init-read-start 
+		     (let ((initCombFilter-read-start
 			    (if window-offset
 				;; Csound style - start each overlap series further into the soundfile
 				(if (= overlap 0)
@@ -244,7 +244,7 @@
 				;; Alternative style - start each overlap series at 0
 				0)))
 		       (begin
-			 (set! readstart (round (* fsr (+ inputbeg init-read-start))))
+			 (set! readstart (round (* fsr (+ inputbeg initCombFilter-read-start))))
 			 (if (not (= overlap 0)) (set! winsamps (floor (* winsamps overlap-ratio))))))
 		     ;; remaining sections
 		     (set! readstart (round (+ readstart (* fsr (/ winlen time-val)))))))

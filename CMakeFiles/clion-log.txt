@@ -1,0 +1,13 @@
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -G Xcode /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106
+-- ******************
+-- Targets added:
+-- MUSI6106Exec
+-- AudioFileIO
+-- CombFilter
+-- ******************
+-- 
+-- MUSI6106Version:0.0.0.1
+-- 
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/apple/Desktop/AudioSoftwareEngineering/2022-MUSI6106

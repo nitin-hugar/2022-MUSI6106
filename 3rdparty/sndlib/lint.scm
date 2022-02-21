@@ -2877,7 +2877,7 @@
 			   
 			   (let ((step-vars (cadr form)))
 			     
-			     ;; walk the init forms before adding the step vars to env
+			     ;; walk the initCombFilter forms before adding the step vars to env
 			     (do ((bindings step-vars (cdr bindings)))
 				 ((not (pair? bindings))
 				  (if (not (null? bindings))
