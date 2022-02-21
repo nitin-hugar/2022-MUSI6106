@@ -9,4 +9,6 @@ delay = 10 samples, gain = 0.5
 delay = 10 samples, gain = 0.5
 ![](IIR_diff.png)
 
+All plots:
 
+![](allPlots.png)
